@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Полина Кузьмина](https://up.htmlacademy.ru/adaptive/27/user/2098917).
-* Наставник: `Неизвестно`.
+* Наставник: [Павел Нюкало](https://htmlacademy.ru/profile/nyukalopavel).
 
 ---
 
