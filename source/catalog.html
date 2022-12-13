@@ -15,17 +15,17 @@
           <svg class="menu-button__icon" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2"/></svg>
           <span class="visually-hidden">Открыть меню</span>
         </button>
+        <div class="main-nav__list-wrapper main-nav__list-wrapper--hidden">
         <button class="main-nav__close close-button" type="button">
           <svg class="close-button__icon" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" fill="#fff"/></svg>
           <span class="visually-hidden">Закрыть меню</span>
         </button>
-        <div class="main-nav__list-wrapper main-nav__list-wrapper--hidden">
           <ul class="main-nav__list">
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--current">
               <a class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__item--current" href="catalog.html">Фото и видео</a>
+              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">Форма отзыва</a>
@@ -36,7 +36,7 @@
           </ul>
         </div>
       </nav>
-      <div class="hero hero-form">
+      <div class="hero hero--small">
         <img class="hero__img" src="img/form/form-sedona-logo.svg" width="229" height="39" alt="Добро пожаловать в Седону! Гранд Каньон - отстой!">
       </div>
     </header>
@@ -63,7 +63,8 @@
               </div>
               <div class="photo-card__caption likes">
                 <button class="likes__button">
-                  <svg class="likes__icon" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9a2 2 0 0 0 1.8-1.2l3-7.1.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z" fill="#81B3D2"/></svg>
+                  <svg class="likes__icon" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9a2 2 0 0 0 1.8-1.2l3-7.1.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z" fill="#000000"/></svg>
                 </button>
                 <span class="likes__counter">1350</span>
               </div>
@@ -81,7 +82,8 @@
               </div>
               <div class="photo-card__caption likes">
                 <button class="likes__button">
-                  <svg class="likes__icon" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9a2 2 0 0 0 1.8-1.2l3-7.1.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z" fill="#81B3D2"/></svg>
+                  <svg class="likes__icon" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9a2 2 0 0 0 1.8-1.2l3-7.1.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z" fill="#000000"/></svg>
                 </button>
                 <span class="likes__counter">143</span>
               </div>
@@ -99,7 +101,8 @@
               </div>
               <div class="photo-card__caption likes">
                 <button class="likes__button">
-                  <svg class="likes__icon" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9a2 2 0 0 0 1.8-1.2l3-7.1.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z" fill="#81B3D2"/></svg>
+                  <svg class="likes__icon" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9a2 2 0 0 0 1.8-1.2l3-7.1.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z" fill="#000000"/></svg>
                 </button>
                 <span class="likes__counter">96</span>
               </div>
@@ -117,7 +120,8 @@
               </div>
               <div class="photo-card__caption likes">
                 <button class="likes__button">
-                  <svg class="likes__icon" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9a2 2 0 0 0 1.8-1.2l3-7.1.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z" fill="#81B3D2"/></svg>
+                  <svg class="likes__icon" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9a2 2 0 0 0 1.8-1.2l3-7.1.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z" fill="#000000"/></svg>
                 </button>
                 <span class="likes__counter">254</span>
               </div>
@@ -133,7 +137,10 @@
           <p class="video__text-description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
         <div class="video__video">
-          <img class="video__thumbnail" src="img/catalog/video-mobile.jpg.jpg" width="280" height="177" alt="Машины, уезжающие за поворот дороги">
+          <img class="video__thumbnail" src="img/catalog/video-mobile.jpg.jpg" width="280" height="180" alt="Машины, уезжающие за поворот дороги">
+          <svg class="video__play-icon" width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M48 27 0 54V0l48 27Z" fill="#fff" fill-opacity=".7"/>
+          </svg>
         </div>
       </section>
     </main>
@@ -146,19 +153,19 @@
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vk" href="#">
+            <a class="social__link" href="#">
               <span class="visually-hidden">Мы Вконтакте</span>
               <svg class="social__icon" width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.45.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9C.15 0 0 .35 0 .73c0 .68.89 4.07 4.14 8.55C6.32 12.34 9.38 14 12.15 14c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 13.22 19.4 14 20.41 14h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z" fill="#fff"/></svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--tg" href="#">
+            <a class="social__link" href="#">
               <span class="visually-hidden">Мы в Телеграме</span>
               <svg class="social__icon" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m21.44 1.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L6.01 10.32 1.26 8.82C.22 8.5.21 7.8 1.48 7.3L20.1.11c.87-.32 1.62.2 1.34 1.51Z" fill="#fff"/></svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--yt" href="#">
+            <a class="social__link" href="#">
               <span class="visually-hidden">Мы в Ютубе</span>
               <svg class="social__icon" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.18 0H2.81C1.31 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.81 14h14.37A2.8 2.8 0 0 0 20 11.2V2.8c.1-1.5-1.2-2.8-2.8-2.8ZM7.03 10.4V3.6L13.87 7l-6.84 3.4Z" fill="#fff"/></svg>
             </a>
