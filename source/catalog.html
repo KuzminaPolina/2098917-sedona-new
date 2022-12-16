@@ -9,22 +9,21 @@
 </head>
   <body class="page__body">
     <header class="main-header">
-      <a href="index.html"><img class="main-header__logo-image" src="img/index/header-logo.png" width="185" height="96" alt="City of Sedona"></a>
-      <nav class="main-nav">
+      <nav class="main-header__nav main-nav">
         <button class="main-nav__toggle menu-button" type="button">
           <svg class="menu-button__icon" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2"/></svg>
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__list-wrapper main-nav__list-wrapper--hidden">
-        <button class="main-nav__close close-button" type="button">
-          <svg class="close-button__icon" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" fill="#fff"/></svg>
-          <span class="visually-hidden">Закрыть меню</span>
-        </button>
+        <div class="main-nav__list-wrapper main-nav__list-wrapper--hidden"><!--main-nav__list-wrapper--hidden-->
+          <button class="main-nav__close close-button" type="button">
+            <svg class="close-button__icon" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" fill="#fff"/></svg>
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
+            <li class="main-nav__item">
               <a class="main-nav__link">Главная</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--current">
               <a class="main-nav__link" href="catalog.html">Фото и видео</a>
             </li>
             <li class="main-nav__item">
@@ -36,8 +35,11 @@
           </ul>
         </div>
       </nav>
-      <div class="hero hero--small">
-        <img class="hero__img" src="img/form/form-sedona-logo.svg" width="229" height="39" alt="Добро пожаловать в Седону! Гранд Каньон - отстой!">
+      <a href="index.html" class="main-header__link">
+        <img class="main-header__logo-image" src="img/index/header-logo.png" width="185" height="96" alt="City of Sedona">
+      </a>
+      <div class="hero">
+        <img class="hero__img" src="img/index/text-index-optimized.png" width="282" height="214" alt="Добро пожаловать в Седону! Гранд Каньон - отстой!">
       </div>
     </header>
 

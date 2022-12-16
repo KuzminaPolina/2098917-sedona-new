@@ -1,9 +1,13 @@
 .impressions {
   box-sizing: border-box;
-  width: 320px;
+  width: 100%;
+  min-width: 320px;
   border-bottom: solid 1px #f2f2f2;
   margin: 0;
   padding: 0 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .impressions__header {
@@ -19,6 +23,10 @@
   font-size: 18px;
   line-height: 26px;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 18px;
 }
 
 .impressions__item {
