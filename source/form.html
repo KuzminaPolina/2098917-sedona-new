@@ -9,17 +9,16 @@
 </head>
   <body class="page__body">
     <header class="main-header">
-      <a href="index.html"><img class="main-header__logo-image" src="img/index/header-logo.png" width="185" height="96" alt="City of Sedona"></a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle menu-button" type="button">
-          <svg class="menu-button__icon" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2"/></svg>
+      <nav class="main-header__nav main-nav">
+        <button class="main-nav__toggle" type="button">
+          <svg class="main-nav__toggle-icon" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2"/></svg>
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <button class="main-nav__close close-button" type="button">
-          <svg class="close-button__icon" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" fill="#fff"/></svg>
-          <span class="visually-hidden">Закрыть меню</span>
-        </button>
-        <div class="main-nav__list-wrapper main-nav__list-wrapper--hidden">
+        <div class="main-nav__list-wrapper main-nav__list-wrapper--hidden"><!--main-nav__list-wrapper--hidden-->
+          <button class="main-nav__close" type="button">
+            <svg class="main-nav__close--icon" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" fill="#fff"/></svg>
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link">Главная</a>
@@ -27,8 +26,8 @@
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">Фото и видео</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__item--current" href="form.html">Форма отзыва</a>
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">HTML Academy</a>
@@ -36,8 +35,11 @@
           </ul>
         </div>
       </nav>
-      <div class="hero hero-form">
-        <img class="hero__img" src="img/form/form-sedona-logo.svg" width="229" height="39" alt="Добро пожаловать в Седону! Гранд Каньон - отстой!">
+      <a href="index.html" class="main-header__link">
+        <img class="main-header__logo-image" src="img/index/header-logo.png" width="185" height="96" alt="City of Sedona">
+      </a>
+      <div class="hero">
+        <img class="hero__img" src="img/index/text-index-optimized.png" width="282" height="214" alt="Добро пожаловать в Седону! Гранд Каньон - отстой!">
       </div>
     </header>
 
@@ -60,7 +62,7 @@
               <label class="name__label" for="form-surname">Фамилия*:</label>
               <input class="name__input" type="text" id="form-surname" placeholder="Пустота" required>
               <label class="name__label" for="form-patronym">Отчество*:</label>
-              <input class="name__input" type="text" id="form-patronym" placeholder="Викторович">
+              <input class="name__input name__input--last" type="text" id="form-patronym" placeholder="Викторович">
             </fieldset>
 
             <fieldset class="form__column-two contacts">
@@ -68,12 +70,20 @@
               <label class="contacts__label" for="phone">Контактный телефон*:</label>
               <div class="contacts__line">
                 <input class="contacts__input" type="tel" id="phone" placeholder="Введите телефон" required>
-                <span class="contacts__button"><svg class="contacts__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1A17 17 0 0 1 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8Z" fill="#010101"/></svg></span>
+                <span class="contacts__decor">
+                  <svg class="contacts__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1A17 17 0 0 1 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8Z" fill="#010101"/>
+                  </svg>
+                </span>
               </div>
               <label class="contacts__label" for="email">Электронная почта*:</label>
-              <div class="contacts__line">
+              <div class="contacts__line contacts__line--margin-btm">
                 <input class="contacts__input" type="email" id="email" placeholder="Введите e-mail" required>
-                <span class="contacts__button"><svg class="contacts__icon" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m8 8-1-.3L0 4v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V4L9 7.7 8 8Zm7-8H1a1 1 0 0 0-1 1v.8L8 6l8-4.2V1c0-.5-.5-1-1-1Z" fill="#000"/></svg></span>
+                <span class="contacts__decor">
+                  <svg class="contacts__icon" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m8 8-1-.3L0 4v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V4L9 7.7 8 8Zm7-8H1a1 1 0 0 0-1 1v.8L8 6l8-4.2V1c0-.5-.5-1-1-1Z" fill="#000"/>
+                  </svg>
+                </span>
               </div>
             </fieldset>
           </div>
@@ -96,7 +106,7 @@
                 </label>
               </li>
 
-              <li class="impressions__item">
+              <li class="impressions__item impressions__item--margin">
                 <label class="impressions__control" for="undefined">
                   <input class="visually-hidden impressions__input" id="undefined" type="radio" name="impressions-input">
                   <span class="impressions__control-mark"></span>
@@ -149,7 +159,7 @@
           </fieldset>
 
           <input class="form__submit" type="submit" value="Отправить отзыв">
-          <span class="form__note">* - обязательные поля</span>
+          <span class="form__note">* — обязательные поля</span>
         </form>
       </section>
     </main>
@@ -162,19 +172,19 @@
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vk" href="#">
+            <a class="social__link" href="#">
               <span class="visually-hidden">Мы Вконтакте</span>
               <svg class="social__icon" width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.45.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9C.15 0 0 .35 0 .73c0 .68.89 4.07 4.14 8.55C6.32 12.34 9.38 14 12.15 14c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 13.22 19.4 14 20.41 14h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z" fill="#fff"/></svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--tg" href="#">
+            <a class="social__link" href="#">
               <span class="visually-hidden">Мы в Телеграме</span>
               <svg class="social__icon" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m21.44 1.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L6.01 10.32 1.26 8.82C.22 8.5.21 7.8 1.48 7.3L20.1.11c.87-.32 1.62.2 1.34 1.51Z" fill="#fff"/></svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--yt" href="#">
+            <a class="social__link" href="#">
               <span class="visually-hidden">Мы в Ютубе</span>
               <svg class="social__icon" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.18 0H2.81C1.31 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.81 14h14.37A2.8 2.8 0 0 0 20 11.2V2.8c.1-1.5-1.2-2.8-2.8-2.8ZM7.03 10.4V3.6L13.87 7l-6.84 3.4Z" fill="#fff"/></svg>
             </a>
@@ -191,17 +201,25 @@
       </div>
     </footer>
     <div class="modal-success success success--closed">
-      <p class="success__header">Ваш отзыв отправлен!</p>
-      <p class="success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <div class="success__button-area">
-        <button class="success__button button">ЗАКРЫТЬ ОКНО</button>
+      <div class="success__window">
+        <div class="success__text-area">
+        <p class="success__header">Ваш отзыв отправлен!</p>
+        <p class="success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+        </div>
+        <div class="success__button-area">
+          <button class="success__button button" type="button">ЗАКРЫТЬ ОКНО</button>
+        </div>
       </div>
     </div>
 
     <div class="modal-fail fail fail--closed">
-      <p class="fail__header">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
-      <p class="fail__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="fail__button button">ОК</button>
+      <div class="fail__window">
+        <div class="fail__text-area">
+        <p class="fail__header">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
+        <p class="fail__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        </div>
+        <button class="fail__button button" type="button">ОК</button>
+      </div>
     </div>
   </body>
 </html>
