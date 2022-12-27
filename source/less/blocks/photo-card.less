@@ -1,6 +1,11 @@
 .photo-card {
   padding: 0 18px;
   border-bottom: solid 1px #f2f2f2;
+  position: relative;
+}
+
+.photo-card__photo {
+  display: block;
 }
 
 .photo-card__link {
@@ -9,4 +14,44 @@
 
 .photo-card__caption {
   margin-bottom: 25px;
+}
+
+.photo-card__desktop,
+.photo-card__tablet,
+.photo-card__mobile,
+.photo-card__fallback {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-card {
+    padding: 0;
+    margin: 0;
+  }
+
+  .photo-card__caption {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo-card__caption {
+    order: 1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .photo-card__link {
+    order: 2;
+  }
 }

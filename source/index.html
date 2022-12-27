@@ -14,17 +14,20 @@
           <svg class="main-nav__toggle-icon" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2"/></svg>
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__list-wrapper"><!--main-nav__list-wrapper--hidden-->
+        <div class="main-nav__list-wrapper main-nav__list-wrapper--hidden"><!--main-nav__list-wrapper--hidden-->
           <button class="main-nav__close" type="button">
-            <svg class="main-nav__close--icon" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" fill="#fff"/></svg>
+            <svg class="main-nav__close-icon" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" fill="#fff"/></svg>
             <span class="visually-hidden">Закрыть меню</span>
           </button>
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link">Главная</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="main-nav__item main-nav__item--hidden">
+              <a class="main-nav__link" href="#">Заглушка</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">Форма отзыва</a>
@@ -37,7 +40,11 @@
       </nav>
       <img class="main-header__logo-image" src="img/index/header-logo.png" width="185" height="96" alt="City of Sedona">
       <div class="hero">
-        <img class="hero__img" src="img/index/text-index-optimized.png" width="282" height="214" alt="Добро пожаловать в Седону! Гранд Каньон - отстой!">
+        <picture class="hero__img-block">
+          <source class="hero__source-big" media="(min-width: 768px)" srcset="img/index/text-index-big.png">
+          <source class="hero__source-small" srcset="img/index/text-index-small.png">
+          <img class="hero__img" src="img/index/text-index-small.png" alt="Добро пожаловать в Седону! Гранд Каньон - отстой!">
+        </picture>
       </div>
     </header>
 
@@ -52,19 +59,19 @@
         <p class="intro__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
 
-      <ol class="advantages">
-        <li class="advantages__item">
-          <div class="advantages__numbered advantages__numbered--blue advantages__numbered--ornament">
+      <ol class="advantages grid">
+        <li class="advantages__item grid__one grid__subgrid">
+          <div class="advantages__numbered advantages__numbered--blue advantages__numbered--ornament grid__subgrid-one">
             <p class="advantages__numbered-header">Настоящий городок</p>
             <p class="advantages__numbered-number">— №1 —</p>
             <p class="advantages__numbered-description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
 
-          <div class="advantages__img-wrapper">
-            <img class="advantages__img" src="img/index/photo-1.jpg" height="260" width="520" alt="Picturesque townscape">
+          <div class="advantages__img-wrapper grid__subgrid-two">
+            <img class="advantages__img" src="img/index/photo-1.jpg" height="260" width="520" alt="Picturesque townscape" loading="lazy">
           </div>
 
-          <ul class="advantages__sublist">
+          <ul class="advantages__sublist grid__subgrid-three">
             <li class="advantages__attraction advantages__attraction--accomodation">
               <p class="advantages__attractions-header">Жильё</p>
               <p class="advantages__attractions-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -80,16 +87,19 @@
           </ul>
         </li>
 
-        <li class="advantages__item">
+        <li class="advantages__item grid__two">
+          <img class="advantages__img" src="img/index/photo-2.jpg" height="260" width="520" alt="Canyon landscape" loading="lazy">
+        </li>
+
+        <li class="advantages__item grid__three">
           <div class="advantages__numbered advantages__numbered--blue">
             <p class="advantages__numbered-header">Там есть мост дьявола</p>
             <p class="advantages__numbered-number">— №2 —</p>
             <p class="advantages__numbered-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </div>
-          <img class="advantages__img" src="img/index/photo-2.jpg" height="260" width="520" alt="Canyon landscape">
         </li>
 
-        <li class="advantages__item">
+        <li class="advantages__item grid__four">
           <div class="advantages__numbered advantages__numbered--gray">
             <p class="advantages__numbered-header">Небольшая площадь</p>
             <p class="advantages__numbered-number">— №3 —</p>
@@ -97,7 +107,7 @@
           </div>
         </li>
 
-        <li class="advantages__item">
+        <li class="advantages__item grid__five">
           <div class="advantages__numbered advantages__numbered--gray">
             <p class="advantages__numbered-header">Красивая дорога</p>
             <p class="advantages__numbered-number">— №4 —</p>
@@ -105,7 +115,7 @@
           </div>
         </li>
 
-        <li class="advantages__item">
+        <li class="advantages__item grid__six">
           <div class="advantages__numbered advantages__numbered--gray">
             <p class="advantages__numbered-header">Мало туристов</p>
             <p class="advantages__numbered-number">— №5 —</p>
@@ -123,7 +133,7 @@
 
       <section class="map">
         <h2 class="visually-hidden">Карта Седоны</h2>
-        <iframe class="map__sedona" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124615.0383787653!2d-111.82339791597617!3d34.84025358856386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1669453479007!5m2!1sru!2sru" width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="map__sedona" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372989.6026382144!2d-112.01883790296161!3d34.75324850335931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1671540653511!5m2!1sru!2sru" width="520" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </main>
 

@@ -1,0 +1,34 @@
+@media (min-width: @tablet-width) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .grid__one {
+    grid-column: 1 / 4;
+  }
+
+  .grid__two {
+    grid-column: 1 / 3;
+  }
+
+  .grid__subgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .grid__subgrid-one {
+    grid-column: 1 / 2;
+  }
+
+  .grid__subgrid-two {
+    grid-column: 2 / 4;
+  }
+
+  .grid__subgrid-three {
+    grid-column: 1 / 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

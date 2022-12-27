@@ -1,15 +1,39 @@
 .hero {
-  height: 390px;
+  width: 100%;
+  padding: 90px 0 90px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: url("../img/index/ornament.svg") bottom center no-repeat,
-    url("../img/index/index-background.jpg") top center;
+    url("../img/index/index-background.jpg") top center/cover no-repeat;
 }
 
 .hero--small {
-  height: 158px;
+  width: 100%;
+  padding: 52px 0 67px;
   background: url("../img/index/ornament.svg") bottom center no-repeat,
     url("../img/index/index-background.jpg") center center;
+}
+
+.hero-img {
+  width: 100%;
+  /* width: 280px; */
+  object-fit: cover;
+}
+
+@media (min-width: @tablet-width) {
+  .hero {
+    padding: 90px 0 90px;
+  }
+
+  .hero-img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .hero__img-secondary {
+    width: 100%;
+    object-fit: cover;
+  }
 }

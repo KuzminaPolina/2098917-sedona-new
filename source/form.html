@@ -16,18 +16,21 @@
         </button>
         <div class="main-nav__list-wrapper main-nav__list-wrapper--hidden"><!--main-nav__list-wrapper--hidden-->
           <button class="main-nav__close" type="button">
-            <svg class="main-nav__close--icon" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" fill="#fff"/></svg>
+            <svg class="main-nav__close-icon" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" fill="#fff"/></svg>
             <span class="visually-hidden">Закрыть меню</span>
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">Фото и видео</a>
             </li>
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            <li class="main-nav__item main-nav__item--hidden">
+              <a class="main-nav__link" href="#">Заглушка</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current" href="form.html">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">HTML Academy</a>
@@ -38,8 +41,13 @@
       <a href="index.html" class="main-header__link">
         <img class="main-header__logo-image" src="img/index/header-logo.png" width="185" height="96" alt="City of Sedona">
       </a>
-      <div class="hero">
-        <img class="hero__img" src="img/index/text-index-optimized.png" width="282" height="214" alt="Добро пожаловать в Седону! Гранд Каньон - отстой!">
+      <div class="hero hero--small">
+        <picture class="hero__img-block">
+          <source class="hero__source-big" media="(min-width: 768px)" srcset="img/form/sedona-big.png">
+          <source class="hero__source-small" srcset="img/form/sedona-small.png">
+          <img class="hero__img hero__img-secondary" src="img/form/sedona-small.png" alt="Добро пожаловать в Седону! Гранд Каньон - отстой!">
+        </picture>
+        <!-- <img class="hero__img hero__img-secondary" src="img/form/form-sedona-logo.svg" width="230" height="40" alt="Добро пожаловать в Седону! Гранд Каньон - отстой!"> -->
       </div>
     </header>
 
@@ -117,7 +125,7 @@
           </fieldset>
 
           <fieldset class="form__attractions attractions">
-            <h2 class="attractions__header">Посещённые достопримечательности:</h2>
+            <h2 class="attractions__header">Посещённые<br> достопримечательности:</h2>
             <ul class="attractions__list">
               <li class="attractions__item">
                 <label class="attractions__control" for="devils-bridge">
@@ -157,9 +165,10 @@
             <h2 class="text__header">Опишите свои эмоции:</h2>
             <textarea class="text__textfield" rows="10" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-
+          <div class="form__submit-container">
           <input class="form__submit" type="submit" value="Отправить отзыв">
           <span class="form__note">* — обязательные поля</span>
+          </div>
         </form>
       </section>
     </main>
@@ -200,25 +209,25 @@
         </a>
       </div>
     </footer>
-    <div class="modal-success success success--closed">
+    <div class="success success--closed"><!--success--closed-->
       <div class="success__window">
         <div class="success__text-area">
         <p class="success__header">Ваш отзыв отправлен!</p>
         <p class="success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
         </div>
         <div class="success__button-area">
-          <button class="success__button button" type="button">ЗАКРЫТЬ ОКНО</button>
+          <button class="success__button" type="button">ЗАКРЫТЬ ОКНО</button>
         </div>
       </div>
     </div>
 
-    <div class="modal-fail fail fail--closed">
+    <div class="fail fail--closed"> <!--fail--closed-->
       <div class="fail__window">
         <div class="fail__text-area">
         <p class="fail__header">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
         <p class="fail__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         </div>
-        <button class="fail__button button" type="button">ОК</button>
+        <button class="fail__button" type="button">ОК</button>
       </div>
     </div>
   </body>

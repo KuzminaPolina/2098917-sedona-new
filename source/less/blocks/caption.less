@@ -11,3 +11,34 @@
 .caption__author {
   margin: 5px 0 11px 0;
 }
+
+@media (min-width: @tablet-width) {
+  .caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+  }
+
+  .caption__header {
+    margin: 0;
+    padding: 0;
+  }
+
+  .caption__author {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .caption {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
