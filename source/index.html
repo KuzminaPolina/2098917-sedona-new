@@ -26,8 +26,8 @@
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">Фото и видео</a>
             </li>
-            <li class="main-nav__item main-nav__item--hidden">
-              <a class="main-nav__link" href="#">Заглушка</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#"></a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">Форма отзыва</a>
@@ -40,9 +40,9 @@
       </nav>
       <img class="main-header__logo-image" src="img/index/header-logo.png" width="185" height="96" alt="City of Sedona">
       <div class="hero">
-        <picture class="hero__img-block">
-          <source class="hero__source-big" media="(min-width: 768px)" srcset="img/index/text-index-big.png">
-          <source class="hero__source-small" srcset="img/index/text-index-small.png">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/index/text-index-big.png">
+          <source srcset="img/index/text-index-small.png">
           <img class="hero__img" src="img/index/text-index-small.png" alt="Добро пожаловать в Седону! Гранд Каньон - отстой!">
         </picture>
       </div>
@@ -62,9 +62,11 @@
       <ol class="advantages grid">
         <li class="advantages__item grid__one grid__subgrid">
           <div class="advantages__numbered advantages__numbered--blue advantages__numbered--ornament grid__subgrid-one">
-            <p class="advantages__numbered-header">Настоящий городок</p>
-            <p class="advantages__numbered-number">— №1 —</p>
-            <p class="advantages__numbered-description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+            <div class="advantages__numbered-text">
+              <p class="advantages__numbered-header">Настоящий городок</p>
+              <p class="advantages__numbered-number">— №1 —</p>
+              <p class="advantages__numbered-description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
           </div>
 
           <div class="advantages__img-wrapper grid__subgrid-two">
@@ -72,17 +74,23 @@
           </div>
 
           <ul class="advantages__sublist grid__subgrid-three">
-            <li class="advantages__attraction advantages__attraction--accomodation">
-              <p class="advantages__attractions-header">Жильё</p>
-              <p class="advantages__attractions-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <li class="advantages__attraction">
+              <div class="advantages__attraction-text advantages__attraction-text--accomodation">
+                <p class="advantages__attractions-header">Жильё</p>
+                <p class="advantages__attractions-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </div>
             </li>
-            <li class="advantages__attraction advantages__attraction--food">
-              <p class="advantages__attractions-header">Еда</p>
-              <p class="advantages__attractions-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            <li class="advantages__attraction">
+              <div class="advantages__attraction-text advantages__attraction-text--food">
+                <p class="advantages__attractions-header">Еда</p>
+                <p class="advantages__attractions-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </div>
             </li>
-            <li class="advantages__attraction advantages__attraction--souvenirs">
-              <p class="advantages__attractions-header">Сувениры</p>
-              <p class="advantages__attractions-description">Не только китайского, но и местного производства!</p>
+            <li class="advantages__attraction">
+              <div class="advantages__attraction-text advantages__attraction-text--souvenirs">
+                <p class="advantages__attractions-header">Сувениры</p>
+                <p class="advantages__attractions-description">Не только китайского, но и местного производства!</p>
+              </div>
             </li>
           </ul>
         </li>
@@ -93,33 +101,41 @@
 
         <li class="advantages__item grid__three">
           <div class="advantages__numbered advantages__numbered--blue">
-            <p class="advantages__numbered-header">Там есть мост дьявола</p>
-            <p class="advantages__numbered-number">— №2 —</p>
-            <p class="advantages__numbered-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <div class="advantages__numbered-text">
+              <p class="advantages__numbered-header">Там есть мост дьявола</p>
+              <p class="advantages__numbered-number">— №2 —</p>
+              <p class="advantages__numbered-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
           </div>
         </li>
 
         <li class="advantages__item grid__four">
           <div class="advantages__numbered advantages__numbered--gray">
-            <p class="advantages__numbered-header">Небольшая площадь</p>
-            <p class="advantages__numbered-number">— №3 —</p>
-            <p class="advantages__numbered-description">Все достопримечательности находятся очень близко</p>
+            <div class="advantages__numbered-text">
+              <p class="advantages__numbered-header">Небольшая площадь</p>
+              <p class="advantages__numbered-number">— №3 —</p>
+              <p class="advantages__numbered-description">Все интересные места находятся очень близко</p>
+            </div>
           </div>
         </li>
 
         <li class="advantages__item grid__five">
           <div class="advantages__numbered advantages__numbered--gray">
-            <p class="advantages__numbered-header">Красивая дорога</p>
-            <p class="advantages__numbered-number">— №4 —</p>
-            <p class="advantages__numbered-description">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
+            <div class="advantages__numbered-text">
+              <p class="advantages__numbered-header">Красивая дорога</p>
+              <p class="advantages__numbered-number">— №4 —</p>
+              <p class="advantages__numbered-description">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
+            </div>
           </div>
         </li>
 
         <li class="advantages__item grid__six">
           <div class="advantages__numbered advantages__numbered--gray">
-            <p class="advantages__numbered-header">Мало туристов</p>
-            <p class="advantages__numbered-number">— №5 —</p>
-            <p class="advantages__numbered-description">Большинство едет в Гранд Каньон<br> и толпится там</p>
+            <div class="advantages__numbered-text">
+              <p class="advantages__numbered-header">Мало туристов</p>
+              <p class="advantages__numbered-number">— №5 —</p>
+              <p class="advantages__numbered-description">Большинство едет в Гранд Каньон<br> и толпится там</p>
+            </div>
           </div>
         </li>
       </ol>

@@ -26,8 +26,8 @@
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--current" href="catalog.html">Фото и видео</a>
             </li>
-            <li class="main-nav__item main-nav__item--hidden">
-              <a class="main-nav__link" href="#">Заглушка</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html"></a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">Форма отзыва</a>
@@ -42,9 +42,9 @@
         <img class="main-header__logo-image" src="img/index/header-logo.png" width="185" height="96" alt="City of Sedona">
       </a>
       <div class="hero hero--small">
-        <picture class="hero__img-block">
-          <source class="hero__source-big" media="(min-width: 768px)" srcset="img/form/sedona-big.png">
-          <source class="hero__source-small" srcset="img/form/sedona-small.png">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/form/sedona-big.png">
+          <source srcset="img/form/sedona-small.png">
           <img class="hero__img hero__img-secondary" src="img/form/sedona-small.png" alt="Добро пожаловать в Седону! Гранд Каньон - отстой!">
         </picture>
       </div>
@@ -61,12 +61,12 @@
       <section class="photos">
         <h2 class="visually-hidden">Галерея фото</h2>
         <ul class="photos__list photo-grid">
-          <li class="photos__item photo-card photo-grid-one">
+          <li class="photos__item photo-card photo-grid__one">
             <a class="photo-card__link">
-              <picture class="photo-card__photo">
-                <source class="photo-card__desktop" media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop.jpg">
-                <source class="photo-card-tablet" media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet.jpg">
-                <source class="photo-card-mobile" srcset="img/catalog/photo-1-mobile.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet.jpg">
+                <source srcset="img/catalog/photo-1-mobile.jpg">
                 <img class="photo-card__fallback" src="img/catalog/photo-1-mobile.jpg" alt="Уходящая в закат дорога">
               </picture>
             </a>
@@ -78,19 +78,19 @@
               <div class="caption__likes likes">
                 <button class="likes__button">
                   <svg class="likes__icon" width="22" height="20" viewBox="0 0 22 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9a2 2 0 0 0 1.8-1.2l3-7.1.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z" fill="#currentColor"/></svg>
+                    <path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9a2 2 0 0 0 1.8-1.2l3-7.1.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z" fill="currentColor"/></svg>
                 </button>
                 <span class="likes__counter">1350</span>
               </div>
             </div>
           </li>
 
-          <li class="photos__item photo-card photo-grid-two">
+          <li class="photos__item photo-card photo-grid__two">
             <a class="photo-card__link">
-              <picture class="photo-card__photo">
-                <source class="photo-card__desktop" media="(min-width: 1200px)" srcset="img/catalog/photo-2-desktop.jpg">
-                <source class="photo-card-tablet" media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet.jpg">
-                <source class="photo-card-mobile" srcset="img/catalog/photo-2-mobile.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-2-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet.jpg">
+                <source srcset="img/catalog/photo-2-mobile.jpg">
                 <img class="photo-card__fallback" src="img/catalog/photo-2-mobile.jpg" alt="Необычный кактус">
               </picture>
             </a>
@@ -102,19 +102,19 @@
               <div class="caption__likes likes likes">
                 <button class="likes__button">
                   <svg class="likes__icon" width="22" height="20" viewBox="0 0 22 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9a2 2 0 0 0 1.8-1.2l3-7.1.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z" fill="#currentColor"/></svg>
+                    <path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9a2 2 0 0 0 1.8-1.2l3-7.1.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z" fill="currentColor"/></svg>
                 </button>
                 <span class="likes__counter">143</span>
               </div>
             </div>
           </li>
 
-          <li class="photos__item photo-card photo-grid-three">
+          <li class="photos__item photo-card photo-grid__three">
             <a class="photo-card__link">
-              <picture class="photo-card__photo">
-                <source class="photo-card__desktop" media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop.jpg">
-                <source class="photo-card-tablet" media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet.jpg">
-                <source class="photo-card-mobile" srcset="img/catalog/photo-3-mobile.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet.jpg">
+                <source srcset="img/catalog/photo-3-mobile.jpg">
                 <img class="photo-card__fallback" src="img/catalog/photo-3-mobile.jpg" alt="Дорога, петляющая по лесу">
               </picture>
             </a>
@@ -126,19 +126,19 @@
               <div class="caption__likes likes likes">
                 <button class="likes__button">
                   <svg class="likes__icon" width="22" height="20" viewBox="0 0 22 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9a2 2 0 0 0 1.8-1.2l3-7.1.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z" fill="#currentColor"/></svg>
+                    <path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9a2 2 0 0 0 1.8-1.2l3-7.1.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z" fill="currentColor"/></svg>
                 </button>
                 <span class="likes__counter">96</span>
               </div>
             </div>
           </li>
 
-          <li class="photos__item photo-card photo-grid-four">
+          <li class="photos__item photo-card photo-grid__four">
             <a class="photo-card__link">
-              <picture class="photo-card__photo">
-                <source class="photo-card__desktop" media="(min-width: 1200px)" srcset="img/catalog/photo-4-desktop.jpg">
-                <source class="photo-card-tablet" media="(min-width: 768px)" srcset="img/catalog/photo-4-tablet.jpg">
-                <source class="photo-card-mobile" srcset="img/catalog/photo-4-mobile.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-4-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-4-tablet.jpg">
+                <source srcset="img/catalog/photo-4-mobile.jpg">
                 <img class="photo-card__fallback" src="img/catalog/photo-4-mobile.jpg" alt="Вид на красные скалы">
               </picture>
             </a>
@@ -150,7 +150,7 @@
               <div class="caption__likes likes">
                 <button class="likes__button">
                   <svg class="likes__icon" width="22" height="20" viewBox="0 0 22 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9a2 2 0 0 0 1.8-1.2l3-7.1.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z" fill="#currentColor"/></svg>
+                    <path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9a2 2 0 0 0 1.8-1.2l3-7.1.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z" fill="currentColor"/></svg>
                 </button>
                 <span class="likes__counter">254</span>
               </div>
@@ -166,10 +166,10 @@
           <p class="video__text-description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
         <div class="video__video">
-          <picture class="video__thumbnail">
-            <source class="video__thumbnail-desktop" media="(min-width: 1200px)" srcset="img/catalog/video-desktop.jpg">
-            <source class="video__thumbnail-tablet" media="(min-width: 768px)" srcset="img/catalog/video-tablet.jpg">
-            <source class="video__thumbnail-mobile" srcset="img/catalog/video-mobile.jpg">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/catalog/video-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/catalog/video-tablet.jpg">
+            <source srcset="img/catalog/video-mobile.jpg">
             <img class="video__thumbnail-fallback" src="img/catalog/video-mobile.jpg" alt="Машины, уезжающие за поворот дороги">
           </picture>
           <svg class="video__play-icon" width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg">

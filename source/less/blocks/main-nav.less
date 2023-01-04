@@ -94,19 +94,13 @@
   }
 
   .main-nav__list {
-    display: flex;
-    flex-direction: row;
-    box-shadow: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
   }
 
   .main-nav__item {
     box-shadow: none;
     background-color: #ffffff;
-
-    &--hidden {
-      color: #ffffff;
-      display: block;
-    }
   }
 
   .main-nav__link {
