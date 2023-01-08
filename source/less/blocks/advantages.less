@@ -80,6 +80,7 @@
   margin: 0 auto;
   align-self: center;
   display: inline-block;
+  flex-grow: 1;
 }
 
 .advantages__attraction-text {
@@ -87,6 +88,7 @@
   flex-direction: column;
   align-content: center;
   padding-left: 47px;
+  flex-grow: 1;
 
   &--accomodation {
     background: url("../img/index/house-icon.svg") left top 0/40px 40px no-repeat;
@@ -132,7 +134,7 @@
     }
 
     &--blue {
-      max-height: 260px;
+      flex-grow: 1;
       overflow: auto;
     }
 
@@ -151,11 +153,6 @@
 
   .advantages__attractions-header {
     text-align: center;
-  }
-
-  .advantages__numbered-text {
-    overflow: auto;
-    max-width: 300px;
   }
 
   .advantages__attractions-description {
@@ -177,16 +174,10 @@
     align-content: center;
     box-sizing: border-box;
     padding: 60px 33px;
+    flex-grow: 1;
   }
 
   .advantages__attraction-text {
-    overflow: auto;
-    max-width: 300px;
-    max-height: 130px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding-top: 80px;
     padding-left: 0;
 
@@ -207,10 +198,10 @@
 @media (min-width: @desktop-width) {
   .advantages__numbered {
     padding: 52px 50px;
-  }
 
-  &--gray {
+    &--gray {
     padding-bottom: 40px;
     padding-top: 63px;
   }
+ }
 }
