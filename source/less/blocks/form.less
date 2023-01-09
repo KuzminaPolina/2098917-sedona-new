@@ -13,10 +13,17 @@
   display: flex;
   flex-direction: column;
   border: none;
+  padding: 0 60px;
 }
 
 .form__feedback {
   margin-bottom: 56px;
+}
+
+.form__submit-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 18px;
 }
 
 .form__submit {
@@ -30,7 +37,7 @@
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
-  width: 89%;
+  width: 100%;
   margin-bottom: 3px;
   cursor: pointer;
 }
@@ -41,5 +48,21 @@
   line-height: 21px;
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
-  padding-right: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .form__index-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form__submit-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form__submit {
+    width: 324px;
+    margin: 0;
+  }
 }

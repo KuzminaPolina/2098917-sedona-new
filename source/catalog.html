@@ -16,15 +16,18 @@
         </button>
         <div class="main-nav__list-wrapper main-nav__list-wrapper--hidden"><!--main-nav__list-wrapper--hidden-->
           <button class="main-nav__close" type="button">
-            <svg class="main-nav__close--icon" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" fill="#fff"/></svg>
+            <svg class="main-nav__close-icon" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" fill="#fff"/></svg>
             <span class="visually-hidden">Закрыть меню</span>
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current" href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html"></a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">Форма отзыва</a>
@@ -38,8 +41,12 @@
       <a href="index.html" class="main-header__link">
         <img class="main-header__logo-image" src="img/index/header-logo.png" width="185" height="96" alt="City of Sedona">
       </a>
-      <div class="hero">
-        <img class="hero__img" src="img/index/text-index-optimized.png" width="282" height="214" alt="Добро пожаловать в Седону! Гранд Каньон - отстой!">
+      <div class="hero hero--small">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/form/sedona-big.png">
+          <source srcset="img/form/sedona-small.png">
+          <img class="hero__img hero__img-secondary" src="img/form/sedona-small.png" alt="Добро пожаловать в Седону! Гранд Каньон - отстой!">
+        </picture>
       </div>
     </header>
 
@@ -53,77 +60,97 @@
 
       <section class="photos">
         <h2 class="visually-hidden">Галерея фото</h2>
-        <ul class="photos__list">
-          <li class="photos__item photo-card">
+        <ul class="photos__list photo-grid">
+          <li class="photos__item photo-card photo-grid__one">
             <a class="photo-card__link">
-              <img class="photo-card__photo" src="img/catalog/photo-1-mobile.jpg" width="280" height="280" alt="Уходящая в закат дорога">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet.jpg">
+                <source srcset="img/catalog/photo-1-mobile.jpg">
+                <img class="photo-card__fallback" src="img/catalog/photo-1-mobile.jpg" alt="Уходящая в закат дорога">
+              </picture>
             </a>
             <div class="photo-card__caption caption">
               <div class="caption__info">
                 <p class="caption__header">Неродные просторы</p>
                 <p class="caption__author">Автор фото: Борис</p>
               </div>
-              <div class="photo-card__caption likes">
+              <div class="caption__likes likes">
                 <button class="likes__button">
-                  <svg class="likes__icon" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9a2 2 0 0 0 1.8-1.2l3-7.1.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z" fill="#000000"/></svg>
+                  <svg class="likes__icon" width="22" height="20" viewBox="0 0 22 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9a2 2 0 0 0 1.8-1.2l3-7.1.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z" fill="currentColor"/></svg>
                 </button>
                 <span class="likes__counter">1350</span>
               </div>
             </div>
           </li>
 
-          <li class="photos__item photo-card">
+          <li class="photos__item photo-card photo-grid__two">
             <a class="photo-card__link">
-              <img class="photo-card__photo" src="img/catalog/photo-2-mobile.jpg" width="280" height="280" alt="Необычный кактус">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-2-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet.jpg">
+                <source srcset="img/catalog/photo-2-mobile.jpg">
+                <img class="photo-card__fallback" src="img/catalog/photo-2-mobile.jpg" alt="Необычный кактус">
+              </picture>
             </a>
             <div class="photo-card__caption caption">
               <div class="caption__info">
                 <p class="caption__header">Местная растительность</p>
                 <p class="caption__author">Автор фото: Сергей</p>
               </div>
-              <div class="photo-card__caption likes">
+              <div class="caption__likes likes likes">
                 <button class="likes__button">
-                  <svg class="likes__icon" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9a2 2 0 0 0 1.8-1.2l3-7.1.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z" fill="#000000"/></svg>
+                  <svg class="likes__icon" width="22" height="20" viewBox="0 0 22 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9a2 2 0 0 0 1.8-1.2l3-7.1.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z" fill="currentColor"/></svg>
                 </button>
                 <span class="likes__counter">143</span>
               </div>
             </div>
           </li>
 
-          <li class="photos__item photo-card">
+          <li class="photos__item photo-card photo-grid__three">
             <a class="photo-card__link">
-              <img class="photo-card__photo" src="img/catalog/photo-3-mobile.jpg" width="280" height="280" alt="Дорога, петляющая по лесу">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet.jpg">
+                <source srcset="img/catalog/photo-3-mobile.jpg">
+                <img class="photo-card__fallback" src="img/catalog/photo-3-mobile.jpg" alt="Дорога, петляющая по лесу">
+              </picture>
             </a>
             <div class="photo-card__caption caption">
               <div class="caption__info">
                 <p class="caption__header">Дорога на Север</p>
                 <p class="caption__author">Автор фото: Петр</p>
               </div>
-              <div class="photo-card__caption likes">
+              <div class="caption__likes likes likes">
                 <button class="likes__button">
-                  <svg class="likes__icon" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9a2 2 0 0 0 1.8-1.2l3-7.1.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z" fill="#000000"/></svg>
+                  <svg class="likes__icon" width="22" height="20" viewBox="0 0 22 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9a2 2 0 0 0 1.8-1.2l3-7.1.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z" fill="currentColor"/></svg>
                 </button>
                 <span class="likes__counter">96</span>
               </div>
             </div>
           </li>
 
-          <li class="photos__item photo-card">
+          <li class="photos__item photo-card photo-grid__four">
             <a class="photo-card__link">
-              <img class="photo-card__photo" src="img/catalog/photo-4-mobile.jpg" width="280" height="280" alt="Вид на красные скалы">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-4-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-4-tablet.jpg">
+                <source srcset="img/catalog/photo-4-mobile.jpg">
+                <img class="photo-card__fallback" src="img/catalog/photo-4-mobile.jpg" alt="Вид на красные скалы">
+              </picture>
             </a>
             <div class="photo-card__caption caption">
               <div class="caption__info">
                 <p class="caption__header">Мост Дьявола</p>
                 <p class="caption__author">Автор фото: Антон</p>
               </div>
-              <div class="photo-card__caption likes">
+              <div class="caption__likes likes">
                 <button class="likes__button">
-                  <svg class="likes__icon" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9a2 2 0 0 0 1.8-1.2l3-7.1.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z" fill="#000000"/></svg>
+                  <svg class="likes__icon" width="22" height="20" viewBox="0 0 22 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9a2 2 0 0 0 1.8-1.2l3-7.1.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z" fill="currentColor"/></svg>
                 </button>
                 <span class="likes__counter">254</span>
               </div>
@@ -139,7 +166,12 @@
           <p class="video__text-description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
         <div class="video__video">
-          <img class="video__thumbnail" src="img/catalog/video-mobile.jpg.jpg" width="280" height="180" alt="Машины, уезжающие за поворот дороги">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/catalog/video-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/catalog/video-tablet.jpg">
+            <source srcset="img/catalog/video-mobile.jpg">
+            <img class="video__thumbnail-fallback" src="img/catalog/video-mobile.jpg" alt="Машины, уезжающие за поворот дороги">
+          </picture>
           <svg class="video__play-icon" width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M48 27 0 54V0l48 27Z" fill="#fff" fill-opacity=".7"/>
           </svg>

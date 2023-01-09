@@ -1,6 +1,10 @@
 .video {
   background-color: #ffffff;
   padding: 20px 18px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .video__text {
@@ -31,4 +35,16 @@
 
 .video__play-icon {
   position: absolute;
+}
+
+@media (min-width: @tablet-width) {
+  .video__text-header {
+    font-size: 31px;
+    margin-bottom: 30px;
+  }
+
+  .video__text-description {
+    width: 445px;
+    margin-bottom: 65px;
+  }
 }

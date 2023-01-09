@@ -66,3 +66,44 @@
 .main-nav__list-wrapper--hidden {
   display: none;
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav__list-wrapper--hidden {
+    display: block;
+  }
+
+  .main-nav {
+    padding: 0;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list-wrapper {
+    position: initial;
+    background-color: none;
+  }
+
+  .main-nav__close {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .main-nav__item {
+    box-shadow: none;
+    background-color: #ffffff;
+  }
+
+  .main-nav__link {
+    color: #000000;
+
+    &--current {
+      color: #766357;
+    }
+  }
+}

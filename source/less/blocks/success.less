@@ -1,3 +1,14 @@
+.success {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 11;
+}
+
 .success--closed {
   display: none;
 }
@@ -43,4 +54,22 @@
   border: none;
   width: 100%;
   cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .success__window {
+    width: 640px;
+  }
+
+  .success__text-area {
+    padding: 50px 100px 30px;
+  }
+
+  .success__header {
+    font-size: 21px;
+  }
+
+  .success__button-area {
+    padding: 44px 90px;
+  }
 }

@@ -8,27 +8,36 @@
 }
 
 .advantages__item,
-.advantages__attraction {
+.advantages__attraction,
+.advantages__img-wrapper {
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
+  align-content: center;
 }
 
 .advantages__sublist {
   list-style: none;
-  margin: 0;
   padding: 23px 18px 46px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
   background-color: #ffffff;
-  align-self: center;
 }
 
 .advantages__numbered {
-  padding: 40px 18px;
+  padding: 40px 18px 31px;
   text-align: center;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 
   &--ornament {
+    padding-top: 70px;
     background: url("../img/index/intro-decoration.svg") top -2px center no-repeat;
   }
 
@@ -38,10 +47,10 @@
   }
 
   &--gray {
-    background-color: #d6d6d6;
+    background-color: #eeeeee;
     padding-top: 24px;
     padding-bottom: 24px;
-    box-shadow: inset 1px -170px 0 30px #eeeeee;
+    border-bottom: solid 1px #d6d6d6;
   }
 }
 
@@ -51,44 +60,148 @@
 }
 
 .advantages__numbered-description {
+  text-align: center;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
 }
 
 .advantages__img-wrapper {
-  align-self: center;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  height: 100%;
   width: 100%;
 }
 
 .advantages__img {
   width: 100%;
+  object-fit: cover;
   padding: 0;
   margin: 0 auto;
-  object-fit: cover;
   align-self: center;
+  display: inline-block;
+  flex-grow: 1;
 }
 
-.advantages__attraction {
+.advantages__attraction-text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   padding-left: 47px;
+  flex-grow: 1;
 
   &--accomodation {
-    background: url("../img/index/house-icon.svg") left top 10px/39px 37px no-repeat;
+    background: url("../img/index/house-icon.svg") left top 0/40px 40px no-repeat;
   }
 
   &--food {
-    background: url("../img/index/burger-icon.svg") left top 10px/39px 37px no-repeat;
+    background: url("../img/index/burger-icon.svg") left top 0/40px 35px no-repeat;
   }
 
   &--souvenirs {
-    background: url("../img/index/gift-icon.svg") left top 10px/39px 37px no-repeat;
+    background: url("../img/index/gift-icon.svg") left top 0/40px 40px no-repeat;
   }
 }
 
 .advantages__attractions-header {
   .header;
-  margin-bottom: 16px;
+  margin-top: 5px;
 }
 
 .advantages__attractions-description {
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__item {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+  }
+
+  .advantages__numbered {
+    box-sizing: border-box;
+    padding: 52px 33px 30px;
+    flex-grow: 1;
+
+    &--gray {
+      background-color: #eeeeee;
+      box-shadow: none;
+      border: none;
+      padding-bottom: 50px;
+    }
+
+    &--blue {
+      flex-grow: 1;
+      overflow: auto;
+    }
+
+    &--ornament {
+      padding-top: 52px;
+      background: #81b3d2;
+    }
+  }
+
+  .advantages__numbered-header {
+    padding-top: 0;
+    margin: 0 auto;
+    width: 170px;
+    text-align: center;
+  }
+
+  .advantages__attractions-header {
+    text-align: center;
+  }
+
+  .advantages__attractions-description {
+    text-align: center;
+  }
+
+  .advantages__sublist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+
+  .advantages__attraction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+    padding: 60px 33px;
+    flex-grow: 1;
+  }
+
+  .advantages__attraction-text {
+    padding-top: 80px;
+    padding-left: 0;
+
+    &--accomodation {
+      background: url("../img/index/house-icon.svg") center top 0/77px 70px no-repeat;
+    }
+
+    &--food {
+      background: url("../img/index/burger-icon.svg") center top 0/80px 70px no-repeat;
+    }
+
+    &--souvenirs {
+      background: url("../img/index/gift-icon.svg") center top 0/66px 75px no-repeat;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__numbered {
+    padding: 52px 50px;
+
+    &--gray {
+      padding-bottom: 40px;
+      padding-top: 63px;
+    }
+  }
 }

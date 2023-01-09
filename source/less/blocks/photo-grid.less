@@ -1,0 +1,22 @@
+@media (min-width: @tablet-width) {
+  .photo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .photo-grid__one {
+    grid-column: 1 / 3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .photo-grid__one {
+    grid-column: 1 / 4;
+  }
+}
