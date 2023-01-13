@@ -1,6 +1,14 @@
 .main-header {
   display: flex;
   flex-direction: column;
+  background-color: #000000;
+  color: #ffffff;
+  position: relative;
+  align-items: center;
+
+  &--nojs {
+    margin-top: 220px;
+  }
 }
 
 .main-header__logo-image {
@@ -9,6 +17,7 @@
   justify-content: center;
   align-self: center;
   position: absolute;
+  z-index: 5;
 }
 
 .main-header__link {
@@ -21,5 +30,9 @@
 @media (min-width: @tablet-width) {
   .main-header__logo-image {
     z-index: 11;
+  }
+
+  .main-header--nojs {
+    margin-top: 0;
   }
 }
