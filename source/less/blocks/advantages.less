@@ -17,6 +17,11 @@
   align-content: center;
 }
 
+.advantages__attraction:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+
 .advantages__sublist {
   list-style: none;
   padding: 23px 18px 46px;
@@ -44,6 +49,7 @@
   &--blue {
     background-color: #81b3d2;
     color: #ffffff;
+    max-height: 260px;
   }
 
   &--gray {
@@ -73,13 +79,17 @@
   width: 100%;
 }
 
+.advantages__img-wrapper picture {
+  display: flex;
+}
+
 .advantages__img {
   width: 100%;
   object-fit: cover;
   padding: 0;
   margin: 0 auto;
   align-self: center;
-  display: inline-block;
+/*   display: inline-block; */
   flex-grow: 1;
 }
 
@@ -175,6 +185,7 @@
     box-sizing: border-box;
     padding: 60px 33px;
     flex-grow: 1;
+    margin-bottom: 0;
   }
 
   .advantages__attraction-text {

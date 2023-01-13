@@ -38,12 +38,14 @@
           </ul>
         </div>
       </nav>
-      <img class="main-header__logo-image" src="img/index/header-logo.png" width="185" height="96" alt="City of Sedona">
+      <img class="main-header__logo-image" srcset="img/index/header-logo-280.png 1x, img/index/header-logo-x2.png 2x" width="185" height="96" alt="City of Sedona">
       <div class="hero">
         <picture>
-          <source media="(min-width: 768px)" srcset="img/index/text-index-big.png">
-          <source srcset="img/index/text-index-small.png">
-          <img class="hero__img" src="img/index/text-index-small.png" alt="Добро пожаловать в Седону! Гранд Каньон - отстой!">
+          <source media="(min-width: 768px)" srcset="img/index/index/tablet/text-index-tablet@1x.png 1x,
+          img/index/index/tablet/text-index-tablet@2x.png 2x">
+          <source media="(min-width: 320px)" srcset="img/index/index/mobile/text-index-mobile@1x.png 1x,
+          img/index/index/mobile/text-index-mobile@2x.png 2x">
+          <img class="hero__img" src="img/index/index/mobile/text-index-mobile@1x.png" alt="Добро пожаловать в Седону! Гранд Каньон - отстой!">
         </picture>
       </div>
     </header>
@@ -68,7 +70,15 @@
           </div>
 
           <div class="advantages__img-wrapper main-grid__subgrid-two">
-            <img class="advantages__img" src="img/index/photo-1.jpg" height="260" width="520" alt="Picturesque townscape" loading="lazy">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/index/index/photo-city-desktop@1x.jpg 1x,
+              img/index/index/photo-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/index/index/tablet/photo-city-tablet@1x.jpg 1x,
+              img/index/index/tablet/photo-city-tablet@2x.jpg 2x">
+              <source media="(min-width: 320px)" srcset="img/index/index/mobile/photo-city-mobile@1x.jpg 1x,
+              img/index/index/mobile/photo-city-mobile@2x.jpg 2x">
+              <img class="advantages__img" src="img/index/photo-1.jpg" height="260" width="520" alt="Picturesque townscape" loading="lazy">
+            </picture>
           </div>
 
           <ul class="advantages__sublist main-grid__subgrid-three">
@@ -95,7 +105,15 @@
 
         <li class="advantages__item main-grid__two main-grid__two-subgrid">
           <div class="advantages__img-wrapper main-grid__two-subgrid-one">
-            <img class="advantages__img" src="img/index/photo-2.jpg" height="260" width="520" alt="Canyon landscape" loading="lazy">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/index/index/photo-bridge-desktop@1x.jpg 1x,
+              img/index/index/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/index/index/tablet/photo-bridge-tablet@1x.jpg 1x,
+              img/index/index/tablet/photo-bridge-tablet@2x.jpg 2x">
+              <source media="(min-width: 320px)" srcset="img/index/index/mobile/photo-bridge-mobile@1x.jpg 1x,
+              img/index/index/mobile/photo-bridge-mobile@2x.jpg 2x">
+              <img class="advantages__img" src="img/index/photo-2.jpg" height="260" width="520" alt="Canyon landscape" loading="lazy">
+            </picture>
           </div>
           <div class="advantages__numbered advantages__numbered--blue main-grid__two-subgrid-two">
             <p class="advantages__numbered-header">Там есть мост дьявола</p>
