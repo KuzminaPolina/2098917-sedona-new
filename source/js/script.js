@@ -20,11 +20,11 @@ navClose.addEventListener('click', function () {
 });
 
 navOpen.addEventListener('click', function () {
-  if (navMainWrpr.classList.contains('main-nav__list-wrapper--hidden')) {
-    navMainWrpr.classList.remove('main-nav__list-wrapper--hidden');
-    navMainWrpr.classList.add('main-nav__list-wrapper--open')
-} else {
-    navMainWrpr.classList.add('main-nav__list-wrapper--hidden');
-    navMainWrpr.classList.remove('main-nav__list-wrapper--open');
-}
+      if (navMainWrpr.classList.contains('main-nav__list-wrapper--hidden')) {
+        navMainWrpr.classList.remove('main-nav__list-wrapper--hidden');
+        navMainWrpr.classList.add('main-nav__list-wrapper--open')
+    } else {
+        navMainWrpr.classList.add('main-nav__list-wrapper--hidden');
+        navMainWrpr.classList.remove('main-nav__list-wrapper--open');
+    }
 });
