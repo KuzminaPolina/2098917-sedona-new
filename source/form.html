@@ -5,6 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" href="../favicon.ico">
+  <link rel="icon" href="img/favicons/favicon-svg-32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Форма отзыва</title>
 </head>
   <body class="page__body">
@@ -39,12 +43,12 @@
         </div>
       </nav>
       <a class="main-header__link" href="index.html">
-        <img class="main-header__logo-image" src="img/index/header-logo.png" width="185" height="96" alt="City of Sedona">
+        <img class="main-header__logo-image" srcset="img/index/header-logo-280.png 1x, img/index/header-logo-x2.png 2x" width="185" height="96" alt="City of Sedona">
       </a>
       <div class="hero hero--small">
         <picture>
           <source media="(min-width: 768px)" srcset="img/form/sedona-big.png">
-          <source srcset="img/form/sedona-small.png">
+          <source media="(min-width: 320px)" srcset="img/form/sedona-small.png">
           <img class="hero__img hero__img-secondary" src="img/form/sedona-small.png" alt="Добро пожаловать в Седону! Гранд Каньон - отстой!">
         </picture>
       </div>

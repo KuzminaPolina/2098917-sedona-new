@@ -5,6 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" href="../favicon.ico">
+  <link rel="icon" href="img/favicons/favicon-svg-32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Фото и видео</title>
 </head>
   <body class="page__body">
@@ -38,13 +42,13 @@
           </ul>
         </div>
       </nav>
-      <a href="index.html" class="main-header__link">
-        <img class="main-header__logo-image" src="img/index/header-logo.png" width="185" height="96" alt="City of Sedona">
+      <a class="main-header__link" href="index.html">
+        <img class="main-header__logo-image" srcset="img/index/header-logo-280.png 1x, img/index/header-logo-x2.png 2x" width="185" height="96" alt="City of Sedona">
       </a>
       <div class="hero hero--small">
         <picture>
           <source media="(min-width: 768px)" srcset="img/form/sedona-big.png">
-          <source srcset="img/form/sedona-small.png">
+          <source media="(min-width: 320px)" srcset="img/form/sedona-small.png">
           <img class="hero__img hero__img-secondary" src="img/form/sedona-small.png" alt="Добро пожаловать в Седону! Гранд Каньон - отстой!">
         </picture>
       </div>
@@ -64,10 +68,10 @@
           <li class="photos__item photo-card photo-grid__one">
             <a class="photo-card__link">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop.jpg">
-                <source media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet.jpg">
-                <source srcset="img/catalog/photo-1-mobile.jpg">
-                <img class="photo-card__fallback" src="img/catalog/photo-1-mobile.jpg" alt="Уходящая в закат дорога">
+                <source media="(min-width: 1200px)" srcset="img/catalog/catalog/desktop/photo-1-desktop@1x.jpg 1x, img/catalog/catalog/desktop/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/catalog/tablet/photo-1-tablet@1x.jpg 1x, img/catalog/catalog/tablet/photo-1-tablet@2x.jpg 2x">
+                <source media="(min-width: 320px)" srcset="img/catalog/catalog/mobile/photo-1-mobile@1x.jpg 1x, img/catalog/catalog/mobile/photo-1-mobile@2x.jpg 2x">
+                <img class="photo-card__first" src="img/catalog/photo-1-mobile.jpg" width="280" height="280" alt="Уходящая в закат дорога">
               </picture>
             </a>
             <div class="photo-card__caption caption">
@@ -88,10 +92,10 @@
           <li class="photos__item photo-card photo-grid__two">
             <a class="photo-card__link">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/catalog/photo-2-desktop.jpg">
-                <source media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet.jpg">
-                <source srcset="img/catalog/photo-2-mobile.jpg">
-                <img class="photo-card__fallback" src="img/catalog/photo-2-mobile.jpg" alt="Необычный кактус">
+                <source media="(min-width: 1200px)" srcset="img/catalog/catalog/desktop/photo-2-desktop@1x.jpg 1x, img/catalog/catalog/desktop/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/catalog/tablet/photo-2-tablet@1x.jpg 1x, img/catalog/catalog/tablet/photo-2-tablet@2x.jpg 2x">
+                <source media="(min-width: 320px)" srcset="img/catalog/catalog/mobile/photo-2-mobile@1x.jpg 1x, img/catalog/catalog/mobile/photo-2-mobile@2x.jpg 2x">
+                <img class="photo-card__rest" src="img/catalog/photo-2-mobile.jpg" width="280" height="280" alt="Необычный кактус">
               </picture>
             </a>
             <div class="photo-card__caption caption">
@@ -112,10 +116,10 @@
           <li class="photos__item photo-card photo-grid__three">
             <a class="photo-card__link">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop.jpg">
-                <source media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet.jpg">
-                <source srcset="img/catalog/photo-3-mobile.jpg">
-                <img class="photo-card__fallback" src="img/catalog/photo-3-mobile.jpg" alt="Дорога, петляющая по лесу">
+                <source media="(min-width: 1200px)" srcset="img/catalog/catalog/desktop/photo-3-desktop@1x.jpg 1x, img/catalog/catalog/desktop/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/catalog/tablet/photo-3-tablet@1x.jpg 1x, img/catalog/catalog/tablet/photo-3-tablet@2x.jpg 2x">
+                <source media="(min-width: 320px)" srcset="img/catalog/catalog/mobile/photo-3-mobile@1x.jpg 1x, img/catalog/catalog/mobile/photo-3-mobile@2x.jpg 2x">
+                <img class="photo-card__rest" src="img/catalog/photo-3-mobile.jpg" width="280" height="280" alt="Дорога, петляющая по лесу">
               </picture>
             </a>
             <div class="photo-card__caption caption">
@@ -136,10 +140,10 @@
           <li class="photos__item photo-card photo-grid__four">
             <a class="photo-card__link">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/catalog/photo-4-desktop.jpg">
-                <source media="(min-width: 768px)" srcset="img/catalog/photo-4-tablet.jpg">
-                <source srcset="img/catalog/photo-4-mobile.jpg">
-                <img class="photo-card__fallback" src="img/catalog/photo-4-mobile.jpg" alt="Вид на красные скалы">
+                <source media="(min-width: 1200px)" srcset="img/catalog/catalog/desktop/photo-4-desktop@1x.jpg 1x, img/catalog/catalog/desktop/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/catalog/tablet/photo-4-tablet@1x.jpg 1x, img/catalog/catalog/tablet/photo-4-tablet@2x.jpg 2x">
+                <source media="(min-width: 320px)" srcset="img/catalog/catalog/mobile/photo-4-mobile@1x.jpg 1x, img/catalog/catalog/mobile/photo-4-mobile@2x.jpg 2x">
+                <img class="photo-card__rest" src="img/catalog/photo-4-mobile.jpg" width="280" height="280"  alt="Вид на красные скалы">
               </picture>
             </a>
             <div class="photo-card__caption caption">
@@ -167,10 +171,10 @@
         </div>
         <div class="video__video">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/catalog/video-desktop.jpg">
-            <source media="(min-width: 768px)" srcset="img/catalog/video-tablet.jpg">
-            <source srcset="img/catalog/video-mobile.jpg">
-            <img class="video__thumbnail-fallback" src="img/catalog/video-mobile.jpg" alt="Машины, уезжающие за поворот дороги">
+            <source media="(min-width: 1200px)" srcset="img/catalog/catalog/desktop/video-desktop@1x.jpg 1x, img/catalog/catalog/desktop/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/catalog/catalog/tablet/video-tablet@1x.jpg 1x, img/catalog/catalog/tablet/video-tablet@2x.jpg 2x">
+            <source media="(min-width: 320px)" srcset="img/catalog/catalog/mobile/video-mobile@1x.jpg 1x, img/catalog/catalog/mobile/video-mobile@2x.jpg 2x">
+            <img class="video__thumbnail-fallback" src="img/catalog/video-mobile.jpg" width="280" height="177" alt="Машины, уезжающие за поворот дороги">
           </picture>
           <svg class="video__play-icon" width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M48 27 0 54V0l48 27Z" fill="#fff" fill-opacity=".7"/>

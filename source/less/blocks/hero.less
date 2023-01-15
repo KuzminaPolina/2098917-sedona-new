@@ -19,13 +19,19 @@
   &--nojs {
     margin-top: 220px;
   }
-}
 
-.hero--small {
-  width: 100%;
-  padding: 52px 0 67px;
-  background: url("../img/index/ornament.svg") bottom center no-repeat,
-    url("../img/index/index-background.jpg") center center;
+  &--small {
+    width: 100%;
+    padding: 52px 0 67px;
+    background: url("../img/index/ornament.svg") bottom center no-repeat,
+      url("../img/form/form/back-mobile-small@1x.jpg") bottom center;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/index/ornament.svg") bottom center no-repeat,
+          url("../img/form/form/back-mobile-small@2x.jpg") bottom center;
+        background-size: 901px auto;
+      }
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -35,24 +41,37 @@
     url("../img/index/index/tablet/back-tablet-desktop.jpg.jpg") top center/cover no-repeat;
     background-size: 1200px auto;
 
-    @media (min-resolution: 2dppx) {
-    background: url("../img/index/ornament.svg") bottom center no-repeat,
-      url("../img/index/index/tablet/back-tablet-desktop.jpg@2x.jpg") top center/cover no-repeat;
-    background-size: 1200px auto;
+      @media (min-resolution: 2dppx) {
+      background: url("../img/index/ornament.svg") bottom center no-repeat,
+        url("../img/index/index/tablet/back-tablet-desktop.jpg@2x.jpg") top center/cover no-repeat;
+      background-size: 1200px auto;}
 
-    &--nojs {
-      margin-top: 0;
+      &--nojs {
+        margin-top: 0;
+      }
+
+      &--small {
+        width: 100%;
+        padding: 95px 0 117px;
+        background: url("../img/index/ornament.svg") bottom center no-repeat,
+          url("../img/index/index/tablet/back-tablet-desktop.jpg.jpg") bottom center no-repeat;
+          background-size: 1200px auto;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/index/ornament.svg") bottom center no-repeat,
+          url("../img/index/index/tablet/back-tablet-desktop.jpg@2x.jpg") bottom center no-repeat;
+        background-size: 1200px auto;
+      }
     }
-  }
 
-  .hero img {
-    width: 461px;
-    height: auto;
-  }
+    .hero img {
+      width: 461px;
+      height: auto;
+    }
 
-  .hero__img-secondary {
-    width: 100%;
-    object-fit: cover;
-  }
+    .hero__img-secondary {
+      width: 100%;
+      object-fit: cover;
+    }
   }
 }
