@@ -1,36 +1,95 @@
 .hero {
   width: 100%;
-  padding: 90px 0 90px;
+  padding: 80px 0 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   color: #ffffff;
   background: url("../img/index/ornament.svg") bottom center no-repeat,
     url("../img/index/index-background.jpg") top center/cover no-repeat;
+  background-size: 901px auto;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/index/ornament.svg") bottom center no-repeat,
+      url("../img/index/retinized/mobile/back-mobile.jpg@2x.jpg") top center/cover no-repeat;
+    background-size: 901px auto;
+  }
 
   &--nojs {
     margin-top: 220px;
   }
-}
 
-.hero--small {
-  width: 100%;
-  padding: 52px 0 67px;
-  background: url("../img/index/ornament.svg") bottom center no-repeat,
-    url("../img/index/index-background.jpg") center center;
+  &--small {
+    width: 100%;
+    padding: 52px 0 67px;
+    background: url("../img/index/ornament.svg") bottom center no-repeat,
+      url("../img/form/form/back-mobile-small@1x.jpg") bottom center;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/index/ornament.svg") bottom center no-repeat,
+        url("../img/form/form/back-mobile-small@2x.jpg") bottom center;
+      background-size: 901px auto;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
   .hero {
-    padding: 90px 0 90px;
+    padding: 80px 0 80px;
+    background: url("../img/index/ornament.svg") bottom center no-repeat,
+      url("../img/index/retinized/tablet/back-tablet-desktop@1x.jpg") top center/cover no-repeat;
+    background-size: 1200px auto;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/index/ornament.svg") bottom center no-repeat,
+        url("../img/index/retinized/tablet/back-tablet-desktop.jpg@2x.jpg") top center/cover no-repeat;
+      background-size: 1200px auto;
+    }
 
     &--nojs {
       margin-top: 0;
+    }
+
+    &--small {
+      width: 100%;
+      padding: 95px 0 117px;
+      background: url("../img/index/ornament.svg") bottom center no-repeat,
+        url("../img/index/retinized/tablet/back-tablet-desktop@1x.jpg") bottom center no-repeat;
+      background-size: 1200px auto;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/index/ornament.svg") bottom center no-repeat,
+          url("../img/index/retinized/tablet/back-tablet-desktop.jpg@2x.jpg") bottom center no-repeat;
+        background-size: 1200px auto;
+      }
+    }
+  }
+
+  .hero__img {
+    width: 461px;
+    height: 350px;
+
+    &--small {
+      width: 457px;
+      height: 78px;
     }
   }
 
   .hero__img-secondary {
     width: 100%;
     object-fit: cover;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hero__img {
+    width: 460px;
+    height: 350px;
+
+    &--small {
+      width: 460px;
+      height: 80px;
+    }
   }
 }
