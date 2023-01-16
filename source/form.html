@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="icon" href="../favicon.ico">
+  <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon-svg-32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
@@ -15,12 +15,16 @@
     <header class="main-header main-header--nojs">
       <nav class="main-header__nav main-nav">
         <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
-          <svg class="main-nav__toggle-icon" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2"/></svg>
+          <svg class="main-nav__toggle-icon" width="23" height="22">
+            <use xlink:href="img/svg-sprite.svg#menu-icon"></use>
+          </svg>
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__list-wrapper main-nav__list-wrapper--open main-nav__list-wrapper--nojs"><!--main-nav__list-wrapper--hidden-->
           <button class="main-nav__close" type="button">
-            <svg class="main-nav__close-icon" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" fill="#fff"/></svg>
+            <svg class="main-nav__close-icon" width="23" height="23">
+              <use xlink:href="img/svg-sprite.svg#close-menu-icon"></use>
+            </svg>
             <span class="visually-hidden">Закрыть меню</span>
           </button>
           <ul class="main-nav__list">
@@ -37,20 +41,20 @@
               <a class="main-nav__link main-nav__link--current" href="form.html">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">HTML Academy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </div>
       </nav>
       <a class="main-header__link" href="index.html">
-        <img class="main-header__logo-image" srcset="img/index/header-logo-280.png 1x, img/index/header-logo-x2.png 2x" width="185" height="96" alt="City of Sedona">
+        <svg class="main-header__logo-image" width="185" height="96">
+          <use xlink:href="img/svg-sprite.svg#logo"></use>
+        </svg>
       </a>
       <div class="hero hero--small">
-        <picture>
-          <source media="(min-width: 768px)" srcset="img/form/sedona-big.png">
-          <source media="(min-width: 320px)" srcset="img/form/sedona-small.png">
-          <img class="hero__img hero__img-secondary" src="img/form/sedona-small.png" alt="Добро пожаловать в Седону! Гранд Каньон - отстой!">
-        </picture>
+        <svg class="hero__img hero__img--small" width="229" height="39">
+          <use xlink:href="img/svg-sprite.svg#hero-text-small"></use>
+        </svg>
       </div>
     </header>
 
@@ -82,8 +86,8 @@
               <div class="contacts__line">
                 <input class="contacts__input" type="tel" id="phone" placeholder="Введите телефон" required>
                 <span class="contacts__decor">
-                  <svg class="contacts__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1A17 17 0 0 1 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8Z" fill="#010101"/>
+                  <svg class="contacts__icon" width="18" height="18">
+                    <use xlink:href="img/svg-sprite.svg#phone"></use>
                   </svg>
                 </span>
               </div>
@@ -91,8 +95,8 @@
               <div class="contacts__line contacts__line--margin-btm">
                 <input class="contacts__input" type="email" id="email" placeholder="Введите e-mail" required>
                 <span class="contacts__decor">
-                  <svg class="contacts__icon" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m8 8-1-.3L0 4v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V4L9 7.7 8 8Zm7-8H1a1 1 0 0 0-1 1v.8L8 6l8-4.2V1c0-.5-.5-1-1-1Z" fill="#000"/>
+                  <svg class="contacts__icon" width="16" height="12">
+                    <use xlink:href="img/svg-sprite.svg#email"></use>
                   </svg>
                 </span>
               </div>
@@ -186,19 +190,25 @@
           <li class="social__item">
             <a class="social__link" href="#">
               <span class="visually-hidden">Мы Вконтакте</span>
-              <svg class="social__icon" width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.45.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9C.15 0 0 .35 0 .73c0 .68.89 4.07 4.14 8.55C6.32 12.34 9.38 14 12.15 14c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 13.22 19.4 14 20.41 14h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z" fill="#fff"/></svg>
+              <svg class="social__icon" width="24" height="14">
+                <use xlink:href="img/svg-sprite.svg#vkotakte"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
               <span class="visually-hidden">Мы в Телеграме</span>
-              <svg class="social__icon" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m21.44 1.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L6.01 10.32 1.26 8.82C.22 8.5.21 7.8 1.48 7.3L20.1.11c.87-.32 1.62.2 1.34 1.51Z" fill="#fff"/></svg>
+              <svg class="social__icon" width="22" height="18">
+                <use xlink:href="img/svg-sprite.svg#telegram"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
               <span class="visually-hidden">Мы в Ютубе</span>
-              <svg class="social__icon" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.18 0H2.81C1.31 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.81 14h14.37A2.8 2.8 0 0 0 20 11.2V2.8c.1-1.5-1.2-2.8-2.8-2.8ZM7.03 10.4V3.6L13.87 7l-6.84 3.4Z" fill="#fff"/></svg>
+              <svg class="social__icon" width="20" height="14">
+                <use xlink:href="img/svg-sprite.svg#youtube"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -206,8 +216,8 @@
       <div class="main-footer__logo">
         <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
           РАЗРАБОТАНО
-          <svg class="main-footer__icon" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" fill="#000"/>
+          <svg class="main-footer__icon" width="60" height="60">
+            <use xlink:href="img/svg-sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </div>
