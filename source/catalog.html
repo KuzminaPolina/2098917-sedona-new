@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon-svg-32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
@@ -16,14 +16,14 @@
       <nav class="main-header__nav main-nav">
         <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
           <svg class="main-nav__toggle-icon" width="23" height="22">
-            <use xlink:href="img/svg-sprite.svg#menu-icon"></use>
+            <use xlink:href="img/sprite.svg#menu-icon"></use>
           </svg>
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__list-wrapper main-nav__list-wrapper--open main-nav__list-wrapper--nojs"><!--main-nav__list-wrapper--hidden-->
           <button class="main-nav__close" type="button">
             <svg class="main-nav__close-icon" width="23" height="23">
-              <use xlink:href="img/svg-sprite.svg#close-menu-icon"></use>
+              <use xlink:href="img/sprite.svg#close-menu-icon"></use>
             </svg>
             <span class="visually-hidden">Закрыть меню</span>
           </button>
@@ -48,12 +48,12 @@
       </nav>
       <a class="main-header__link" href="index.html">
         <svg class="main-header__logo-image" width="185" height="96">
-          <use xlink:href="img/svg-sprite.svg#logo"></use>
+          <use xlink:href="img/sprite.svg#logo"></use>
         </svg>
       </a>
       <div class="hero hero--small">
-        <svg class="hero__img hero__img--small" width="229" height="39">
-          <use xlink:href="img/svg-sprite.svg#hero-text-small"></use>
+        <svg class="hero__img hero__img--small" width="229" height="39" viewBox="0 0 457 78">
+          <use xlink:href="img/sprite.svg#hero-text-small"></use>
         </svg>
       </div>
     </header>
@@ -72,13 +72,13 @@
           <li class="photos__item photo-card photo-grid__one">
             <a class="photo-card__link">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop-webp@1x.webp 1x, img/catalog/photo-1-desktop-webp@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet-webp@1x.webp 1x, img/catalog/photo-1-tablet-webp@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 320px)" srcset="img/catalog/photo-1-mobile-webp@1x.webp 1x, img/catalog/photo-1-mobile-webp@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/retinized/desktop/photo-1-desktop@1x.webp 1x, img/catalog/retinized/desktop/photo-1-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/retinized/tablet/photo-1-tablet@1x.webp 1x, img/catalog/retinized/tablet/photo-1-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 320px)" srcset="img/catalog/retinized/mobile/photo-1-mobile@1x.webp 1x, img/catalog/retinized/mobile/photo-1-mobile@2x.webp 2x">
 
                 <source media="(min-width: 1200px)" srcset="img/catalog/retinized/desktop/photo-1-desktop@1x.jpg 1x, img/catalog/retinized/desktop/photo-1-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/retinized/tablet/photo-1-tablet@1x.jpg 1x, img/catalog/retinized/tablet/photo-1-tablet@2x.jpg 2x">
-                <img class="photo-card__first" src="img/catalog/retinized/mobile/photo-1-mobile@1x.jpg" srcset="img/catalog/catalog/mobile/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Уходящая в закат дорога">
+                <img class="photo-card__first" src="img/catalog/retinized/mobile/photo-1-mobile@1x.jpg" srcset="img/catalog/retinized/mobile/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Уходящая в закат дорога">
               </picture>
             </a>
             <div class="photo-card__caption caption">
@@ -89,7 +89,7 @@
               <div class="caption__likes likes">
                 <button class="likes__button">
                   <svg class="likes__icon" width="22" height="20">
-                    <use xlink:href="img/svg-sprite.svg#like"></use>
+                    <use xlink:href="img/sprite.svg#like"></use>
                   </svg>
                 </button>
                 <span class="likes__counter">1350</span>
@@ -100,6 +100,10 @@
           <li class="photos__item photo-card photo-grid__two">
             <a class="photo-card__link">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/retinized/desktop/photo-2-desktop@1x.webp 1x, img/catalog/retinized/desktop/photo-2-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/retinized/tablet/photo-2-tablet@1x.webp 1x, img/catalog/retinized/tablet/photo-2-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 320px)" srcset="img/catalog/retinized/mobile/photo-2-mobile@1x.webp 1x, img/catalog/retinized/mobile/photo-2-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1200px)" srcset="img/catalog/retinized/desktop/photo-2-desktop@1x.jpg 1x, img/catalog/retinized/desktop/photo-2-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/retinized/tablet/photo-2-tablet@1x.jpg 1x, img/catalog/retinized/tablet/photo-2-tablet@2x.jpg 2x">
                 <img class="photo-card__rest" src="img/catalog/retinized/mobile/photo-2-mobile@1x.jpg" srcset="img/catalog/retinized/mobile/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Необычный кактус">
@@ -113,7 +117,7 @@
               <div class="caption__likes likes likes">
                 <button class="likes__button">
                   <svg class="likes__icon" width="22" height="20">
-                    <use xlink:href="img/svg-sprite.svg#like"></use>
+                    <use xlink:href="img/sprite.svg#like"></use>
                   </svg>
                 </button>
                 <span class="likes__counter">143</span>
@@ -124,6 +128,10 @@
           <li class="photos__item photo-card photo-grid__three">
             <a class="photo-card__link">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/retinized/desktop/photo-3-desktop@1x.webp 1x, img/catalog/retinized/desktop/photo-3-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/retinized/tablet/photo-3-tablet@1x.webp 1x, img/catalog/retinized/tablet/photo-3-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 320px)" srcset="img/catalog/retinized/mobile/photo-3-mobile@1x.webp 1x, img/catalog/retinized/mobile/photo-3-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1200px)" srcset="img/catalog/retinized/desktop/photo-3-desktop@1x.jpg 1x, img/catalog/retinized/desktop/photo-3-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/retinized/tablet/photo-3-tablet@1x.jpg 1x, img/catalog/retinized/tablet/photo-3-tablet@2x.jpg 2x">
                 <img class="photo-card__rest" src="img/catalog/retinized/mobile/photo-3-mobile@1x.jpg" srcset="img/catalog/retinized/mobile/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога, петляющая по лесу">
@@ -137,7 +145,7 @@
               <div class="caption__likes likes likes">
                 <button class="likes__button">
                   <svg class="likes__icon" width="22" height="20">
-                    <use xlink:href="img/svg-sprite.svg#like"></use>
+                    <use xlink:href="img/sprite.svg#like"></use>
                   </svg>
                 </button>
                 <span class="likes__counter">96</span>
@@ -148,6 +156,10 @@
           <li class="photos__item photo-card photo-grid__four">
             <a class="photo-card__link">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/retinized/desktop/photo-4-desktop@1x.webp 1x, img/catalog/retinized/desktop/photo-4-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/retinized/tablet/photo-4-tablet@1x.webp 1x, img/catalog/retinized/tablet/photo-4-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 320px)" srcset="img/catalog/retinized/mobile/photo-4-mobile@1x.webp 1x, img/catalog/retinized/mobile/photo-4-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1200px)" srcset="img/catalog/retinized/desktop/photo-4-desktop@1x.jpg 1x, img/catalog/retinized/desktop/photo-4-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/retinized/tablet/photo-4-tablet@1x.jpg 1x, img/catalog/retinized/tablet/photo-4-tablet@2x.jpg 2x">
                 <img class="photo-card__rest" src="img/catalog/retinized/mobile/photo-4-mobile@1x.jpg" srcset="img/catalog/retinized/mobile/photo-4-mobile@2x.jpg 2x" width="280" height="280"  alt="Вид на красные скалы">
@@ -161,7 +173,7 @@
               <div class="caption__likes likes">
                 <button class="likes__button">
                   <svg class="likes__icon" width="22" height="20">
-                    <use xlink:href="img/svg-sprite.svg#like"></use>
+                    <use xlink:href="img/sprite.svg#like"></use>
                   </svg>
                 </button>
                 <span class="likes__counter">254</span>
@@ -179,12 +191,16 @@
         </div>
         <div class="video__video">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/retinized/desktop/video-desktop@1x.webp 1x, img/catalog/retinized/desktop/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/retinized/tablet/video-tablet@1x.webp 1x, img/catalog/retinized/tablet/video-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 320px)" srcset="img/catalog/retinized/mobile/video-mobile@1x.webp 1x, img/catalog/retinized/mobile/video-mobile@2x.webp 2x">
+
             <source media="(min-width: 1200px)" srcset="img/catalog/retinized/desktop/video-desktop@1x.jpg 1x, img/catalog/retinized/desktop/video-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/catalog/retinized/tablet/video-tablet@1x.jpg 1x, img/catalog/retinized/tablet/video-tablet@2x.jpg 2x">
             <img class="video__thumbnail-fallback" src="img/catalog/retinized/mobile/video-mobile@1x.jpg" srcset="img/catalog/retinized/mobile/video-mobile@2x.jpg 2x" width="280" height="177" alt="Машины, уезжающие за поворот дороги">
           </picture>
           <svg class="video__play-icon" width="48" height="54">
-            <use xlink:href="img/svg-sprite.svg#play-icon"></use>
+            <use xlink:href="img/sprite.svg#play-icon"></use>
           </svg>
         </div>
       </section>
@@ -201,7 +217,7 @@
             <a class="social__link" href="#">
               <span class="visually-hidden">Мы Вконтакте</span>
               <svg class="social__icon" width="24" height="14">
-                <use xlink:href="img/svg-sprite.svg#vkotakte"></use>
+                <use xlink:href="img/sprite.svg#vkontakte"></use>
               </svg>
             </a>
           </li>
@@ -209,7 +225,7 @@
             <a class="social__link" href="#">
               <span class="visually-hidden">Мы в Телеграме</span>
               <svg class="social__icon" width="22" height="18">
-                <use xlink:href="img/svg-sprite.svg#telegram"></use>
+                <use xlink:href="img/sprite.svg#telegram"></use>
               </svg>
             </a>
           </li>
@@ -217,7 +233,7 @@
             <a class="social__link" href="#">
               <span class="visually-hidden">Мы в Ютубе</span>
               <svg class="social__icon" width="20" height="14">
-                <use xlink:href="img/svg-sprite.svg#youtube"></use>
+                <use xlink:href="img/sprite.svg#youtube"></use>
               </svg>
             </a>
           </li>
@@ -226,8 +242,8 @@
       <div class="main-footer__logo">
         <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
           РАЗРАБОТАНО
-          <svg class="main-footer__icon" width="60" height="60">
-            <use xlink:href="img/svg-sprite.svg#htmlacademy"></use>
+          <svg class="main-footer__icon" width="27" height="34" viewBox="0 0 27 34">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </div>

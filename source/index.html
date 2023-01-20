@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon-svg-32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
@@ -16,14 +16,14 @@
       <nav class="main-header__nav main-nav">
         <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
           <svg class="main-nav__toggle-icon" width="23" height="22">
-            <use xlink:href="img/svg-sprite.svg#menu-icon"></use>
+            <use xlink:href="img/sprite.svg#menu-icon"></use>
           </svg>
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__list-wrapper main-nav__list-wrapper--open main-nav__list-wrapper--nojs"><!--main-nav__list-wrapper--hidden-->
           <button class="main-nav__close" type="button">
             <svg class="main-nav__close-icon" width="23" height="23">
-              <use xlink:href="img/svg-sprite.svg#close-menu-icon"></use>
+              <use xlink:href="img/sprite.svg#close-menu-icon"></use>
             </svg>
             <span class="visually-hidden">Закрыть меню</span>
           </button>
@@ -47,11 +47,11 @@
         </div>
       </nav>
       <svg class="main-header__logo-image" width="185" height="96">
-        <use xlink:href="img/svg-sprite.svg#logo"></use>
+        <use xlink:href="img/sprite.svg#logo"></use>
       </svg>
       <div class="hero">
-        <svg class="hero__img" width="282" height="214">
-          <use xlink:href="img/svg-sprite.svg#hero-text-big"></use>
+        <svg class="hero__img" width="282" height="214" viewBox="0 0 461 350">
+          <use xlink:href="img/sprite.svg#hero-text-big"></use>
         </svg>
       </div>
     </header>
@@ -77,10 +77,12 @@
 
           <div class="advantages__img-wrapper main-grid__subgrid-two">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/index/retinized/photo-city-desktop@1x.jpg 1x,
-              img/index/retinized/photo-city-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/index/retinized/tablet/photo-city-tablet@1x.jpg 1x,
-              img/index/retinized/tablet/photo-city-tablet@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/index/retinized/desktop/photo-city-desktop@1x.webp 1x, img/index/retinized/desktop/photo-city-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/index/retinized/tablet/photo-city-tablet@1x.webp 1x, img/index/retinized/tablet/photo-city-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 320px)" srcset="img/index/retinized/mobile/photo-city-mobile@1x.webp 1x, img/index/retinized/mobile/photo-city-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1200px)" srcset="img/index/retinized/photo-city-desktop@1x.jpg 1x, img/index/retinized/photo-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/index/retinized/tablet/photo-city-tablet@1x.jpg 1x, img/index/retinized/tablet/photo-city-tablet@2x.jpg 2x">
               <img class="advantages__img" src="img/index/retinized/mobile/photo-city-mobile@1x.jpg" srcset="img/index/retinized/mobile/photo-city-mobile@2x.jpg 2x" height="260" width="520" alt="Picturesque townscape" loading="lazy">
             </picture>
           </div>
@@ -110,10 +112,12 @@
         <li class="advantages__item main-grid__two main-grid__two-subgrid">
           <div class="advantages__img-wrapper main-grid__two-subgrid-one">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/index/retinized/photo-bridge-desktop@1x.jpg 1x,
-              img/index/retinized/photo-bridge-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/index/retinized/tablet/photo-bridge-tablet@1x.jpg 1x,
-              img/index/retinized/tablet/photo-bridge-tablet@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/index/retinized/desktop/photo-bridge-desktop@1x.webp 1x, img/index/retinized/desktop/photo-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/index/retinized/tablet/photo-bridge-tablet@1x.webp 1x, img/index/retinized/tablet/photo-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 320px)" srcset="img/index/retinized/mobile/photo-bridge-mobile@1x.webp 1x, img/index/retinized/mobile/photo-bridge-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1200px)" srcset="img/index/retinized/photo-bridge-desktop@1x.jpg 1x, img/index/retinized/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/index/retinized/tablet/photo-bridge-tablet@1x.jpg 1x, img/index/retinized/tablet/photo-bridge-tablet@2x.jpg 2x">
               <img class="advantages__img" src="img/index/retinized/mobile/photo-bridge-mobile@1x.jpg" srcset="img/index/retinized/mobile/photo-bridge-mobile@2x.jpg 2x" height="260" width="520" alt="Canyon landscape" loading="lazy">
             </picture>
           </div>
@@ -173,7 +177,7 @@
             <a class="social__link" href="#">
               <span class="visually-hidden">Мы Вконтакте</span>
               <svg class="social__icon" width="24" height="14">
-                <use xlink:href="img/svg-sprite.svg#vkotakte"></use>
+                <use xlink:href="img/sprite.svg#vkontakte"></use>
               </svg>
             </a>
           </li>
@@ -181,7 +185,7 @@
             <a class="social__link" href="#">
               <span class="visually-hidden">Мы в Телеграме</span>
               <svg class="social__icon" width="22" height="18">
-                <use xlink:href="img/svg-sprite.svg#telegram"></use>
+                <use xlink:href="img/sprite.svg#telegram"></use>
               </svg>
             </a>
           </li>
@@ -189,7 +193,7 @@
             <a class="social__link" href="#">
               <span class="visually-hidden">Мы в Ютубе</span>
               <svg class="social__icon" width="20" height="14">
-                <use xlink:href="img/svg-sprite.svg#youtube"></use>
+                <use xlink:href="img/sprite.svg#youtube"></use>
               </svg>
             </a>
           </li>
@@ -198,8 +202,8 @@
       <div class="main-footer__logo">
         <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
           РАЗРАБОТАНО
-          <svg class="main-footer__icon" width="60" height="60">
-            <use xlink:href="img/svg-sprite.svg#htmlacademy"></use>
+          <svg class="main-footer__icon" width="27" height="34" viewBox="0 0 27 34">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </div>
