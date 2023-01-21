@@ -129,7 +129,8 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
+/*   gulp.watch('source/*.html').on('change', html, browser.reload); */
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 // Build
@@ -150,7 +151,7 @@ export const build = gulp.series(
 
 // Default
 
-export const developer = gulp.series(
+export default gulp.series(
   clean,
   fonts,
   copyImages,
@@ -161,11 +162,8 @@ export const developer = gulp.series(
     svg,
     sprite,
     turnToWebp,
-  )
-)
-
-
-
-export default gulp.series(
-  html, scripts, styles, server, watcher
-);
+  ),
+  gulp.series(
+    server,
+    watcher
+  ));
