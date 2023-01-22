@@ -1,11 +1,12 @@
 .intro {
-  padding: 32px 18px 16px;
+  padding: 35px 18px 2px;
   background-color: #ffffff;
 }
 
 .intro__header {
   .header;
   text-align: center;
+  margin-bottom: 35px;
 }
 
 .intro__description {
@@ -15,6 +16,25 @@
 
 @media (min-width: @tablet-width) {
   .intro {
-    padding: 50px 124px;
+    padding: 48px 124px 40px;
+  }
+
+  .intro__header {
+    font-size: 21px;
+    margin-bottom: 30px;
+  }
+
+  .intro__header br {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro {
+    padding: 60px 124px 28px;
+  }
+
+  .intro__header br {
+    display: inline;
   }
 }

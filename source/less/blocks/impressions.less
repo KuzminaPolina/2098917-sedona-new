@@ -28,6 +28,7 @@
   flex-direction: column;
   justify-content: flex-start;
   padding: 0 18px;
+  margin: 0;
 }
 
 .impressions__item {
@@ -73,6 +74,7 @@
 @media (min-width: @tablet-width) {
   .impressions {
     padding: 0;
+    padding-bottom: 5px;
   }
 
   .impressions__header {
@@ -85,10 +87,10 @@
   }
 
   .impressions__list {
-    padding-top: 60px;
+    padding: 50px 70px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 110px;
+    column-gap: 95px;
   }
 
   .impressions__item--margin {
@@ -98,9 +100,11 @@
 
 @media (min-width: @desktop-width) {
   .impressions__list {
-    padding-top: 60px;
+    padding-top: 67px;
+    padding-bottom: 22px;
+    margin-left: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 110px;
+    column-gap: 105px;
   }
 }
