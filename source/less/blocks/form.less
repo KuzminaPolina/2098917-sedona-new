@@ -22,13 +22,13 @@
 .form__submit-container {
   display: flex;
   flex-direction: column;
-  padding: 0 18px;
+  padding: 0 18px 15px;
 }
 
 .form__submit {
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 16px 49px;
+  padding: 18px 49px;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
@@ -52,6 +52,7 @@
 @media (min-width: @tablet-width) {
   .form {
     padding: 0 60px;
+    padding-bottom: 70px;
   }
 
   .form__index-columns {
@@ -60,6 +61,7 @@
   }
 
   .form__submit-container {
+    padding: 0;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -67,5 +69,31 @@
   .form__submit {
     width: 324px;
     margin: 0;
+  }
+
+  .form__note {
+    font-size: 14px;
+    padding-bottom: 13px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    padding-bottom: 60px;
+  }
+
+  .form__index-columns {
+    display: grid;
+    grid-template-columns: 493px 466px;
+    padding: 0 60px;
+  }
+
+  .form__submit-container {
+    box-sizing: border-box;
+    padding: 0 157px;
+  }
+
+  .form__submit {
+    width: 384px;
   }
 }

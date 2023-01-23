@@ -17,14 +17,13 @@
   align-content: center;
 }
 
-.advantages__attraction:not(:last-child) {
-  margin-bottom: 20px;
+.advantages__item--tablet {
+  display: none;
 }
-
 
 .advantages__sublist {
   list-style: none;
-  padding: 23px 18px 46px;
+  padding: 23px 18px 32px;
   margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
@@ -32,7 +31,7 @@
 }
 
 .advantages__numbered {
-  padding: 40px 18px 31px;
+  padding: 37px 18px 38px;
   text-align: center;
   background-color: #ffffff;
   display: flex;
@@ -43,10 +42,12 @@
 
   &--ornament {
     padding-top: 70px;
+    padding-bottom: 40px;
     background: url("../img/index/intro-decoration.svg") top -2px center no-repeat;
   }
 
   &--blue {
+    padding-bottom: 38px;
     background-color: #81b3d2;
     color: #ffffff;
     max-height: 260px;
@@ -100,16 +101,24 @@
   flex-grow: 1;
 
   &--accomodation {
-    background: url("../img/index/house-icon.svg") left top 0/40px 40px no-repeat;
+    background: url("../img/index/house.svg") left top 0/40px 35px no-repeat;
   }
 
   &--food {
-    background: url("../img/index/burger-icon.svg") left top 0/40px 35px no-repeat;
+    background: url("../img/index/burger.svg") left top 0/40px 35px no-repeat;
   }
 
   &--souvenirs {
-    background: url("../img/index/gift-icon.svg") left top 0/40px 40px no-repeat;
+    background: url("../img/index/gift.svg") left 2px top 0/33px 35px no-repeat;
   }
+}
+
+.advantages__attraction {
+  padding-top: 5px;
+}
+
+.advantages__attraction:not(:last-child) {
+  margin-bottom: 12px;
 }
 
 .advantages__attractions-header {
@@ -128,18 +137,23 @@
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
+
+    &--mobile {
+      display: none;
+    }
   }
 
   .advantages__numbered {
     box-sizing: border-box;
-    padding: 52px 33px 30px;
+    padding: 50px 33px 30px;
     flex-grow: 1;
 
     &--gray {
       background-color: #eeeeee;
       box-shadow: none;
       border: none;
-      padding-bottom: 50px;
+      padding-top: 40px;
+      padding-bottom: 40px;
     }
 
     &--blue {
@@ -148,20 +162,27 @@
     }
 
     &--ornament {
-      padding-top: 52px;
+      padding-top: 50px;
       background: #81b3d2;
     }
   }
 
   .advantages__numbered-header {
     padding-top: 0;
+    font-size: 21px;
     margin: 0 auto;
     width: 170px;
     text-align: center;
   }
 
+  .advantages__numbered-description {
+    margin-top: 10px;
+  }
+
   .advantages__attractions-header {
     text-align: center;
+    font-size: 21px;
+    margin-bottom: 8px;
   }
 
   .advantages__attractions-description {
@@ -171,7 +192,7 @@
   .advantages__sublist {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0;
     margin: 0;
   }
@@ -182,25 +203,30 @@
     justify-content: center;
     align-content: center;
     box-sizing: border-box;
-    padding: 60px 33px;
+    padding: 55px 35px 25px;
     flex-grow: 1;
+    margin-bottom: 0;
+    max-width: 400px;
+  }
+
+  .advantages__attraction:not(:last-child) {
     margin-bottom: 0;
   }
 
   .advantages__attraction-text {
-    padding-top: 80px;
+    padding-top: 95px;
     padding-left: 0;
 
     &--accomodation {
-      background: url("../img/index/house-icon.svg") center top 0/77px 70px no-repeat;
+      background: url("../img/index/house.svg") center top 0/77px 70px no-repeat;
     }
 
     &--food {
-      background: url("../img/index/burger-icon.svg") center top 0/80px 70px no-repeat;
+      background: url("../img/index/burger.svg") center top 0/80px 70px no-repeat;
     }
 
     &--souvenirs {
-      background: url("../img/index/gift-icon.svg") center top 0/66px 75px no-repeat;
+      background: url("../img/index/gift.svg") center top 0/66px 75px no-repeat;
     }
   }
 }
@@ -210,8 +236,34 @@
     padding: 52px 50px;
 
     &--gray {
-      padding-bottom: 40px;
-      padding-top: 63px;
+      padding-bottom: 45px;
+      padding-top: 57px;
+    }
+  }
+
+  .advantages__attraction {
+    padding: 55px 35px 55px 47px;
+  }
+
+  .advantages__attraction-text {
+    padding-top: 105px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+
+    &--accomodation {
+      background: url("../img/index/house.svg") center top 10px/78px 70px no-repeat;
+    }
+
+    &--food {
+      background: url("../img/index/burger.svg") center top 10px/75px 70px no-repeat;
+    }
+
+    &--souvenirs {
+      background: url("../img/index/gift.svg") center top 10px/75px 75px no-repeat;
     }
   }
 }
