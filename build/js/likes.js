@@ -1,1 +1,0 @@
-let heart=document.querySelector(".likes__button"),likesNumber=document.querySelector(".likes__counter");heart.onclick=function(){heart.classList.contains("added")?likesNumber.textContent--:likesNumber.textContent++,heart.classList.toggle("added")};
