@@ -73,6 +73,16 @@
   margin: 0;
 }
 
+.advantages__numbered-description .mobile::after,
+.advantages__attractions-description .mobile::after,
+.booking__description .mobile::after {
+  content: "\A";
+}
+
+.mobile::after {
+  white-space: pre;
+}
+
 .advantages__img-wrapper {
   margin: 0;
   padding: 0;
@@ -203,7 +213,7 @@
     justify-content: center;
     align-content: center;
     box-sizing: border-box;
-    padding: 55px 35px 25px;
+    padding: 55px 35px 45px;
     flex-grow: 1;
     margin-bottom: 0;
     max-width: 400px;
@@ -228,6 +238,23 @@
     &--souvenirs {
       background: url("../img/index/gift.svg") center top 0/66px 75px no-repeat;
     }
+  }
+
+  .advantages__numbered-description .mobile::after,
+  .advantages__attractions-description .mobile::after,
+  .booking__description .mobile::after {
+    content: "";
+  }
+
+  .advantages__numbered-description .tablet::after,
+  .advantages__attractions-description .tablet::after,
+  .booking__description .tablet::after,
+  .advantages__numbered-header .tablet::after {
+    content: "\A";
+  }
+
+  .tablet::after {
+    white-space: pre;
   }
 }
 
@@ -265,5 +292,23 @@
     &--souvenirs {
       background: url("../img/index/gift.svg") center top 10px/75px 75px no-repeat;
     }
+  }
+
+  .advantages__numbered-description .tablet::after,
+  .advantages__attractions-description .tablet::after,
+  .booking__description .tablet::after,
+  .advantages__numbered-header .tablet::after {
+    content: "";
+  }
+
+  .advantages__numbered-description .desktop::after,
+  .advantages__attractions-description .desktop::after,
+  .booking__description .desktop::after,
+  .advantages__numbered-header .desktop::after {
+    content: "\A";
+  }
+
+  .desktop::after {
+    white-space: pre;
   }
 }

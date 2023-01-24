@@ -22,7 +22,7 @@
 .form__submit-container {
   display: flex;
   flex-direction: column;
-  padding: 0 18px 15px;
+  padding: 0 18px 20px;
 }
 
 .form__submit {
@@ -41,6 +41,19 @@
   cursor: pointer;
 }
 
+.form__submit:hover {
+  background-color: #669ec0;
+}
+
+.form__submit:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form__submit:disabled {
+  color: #ffffff;
+  background-color: #e5e5e5;
+}
+
 .form__note {
   align-self: flex-end;
   font-size: 12px;
@@ -52,7 +65,7 @@
 @media (min-width: @tablet-width) {
   .form {
     padding: 0 60px;
-    padding-bottom: 70px;
+    padding-bottom: 65px;
   }
 
   .form__index-columns {
@@ -62,6 +75,7 @@
 
   .form__submit-container {
     padding: 0;
+    padding-bottom: 3px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -79,7 +93,7 @@
 
 @media (min-width: @desktop-width) {
   .form {
-    padding-bottom: 60px;
+    padding-bottom: 65px;
   }
 
   .form__index-columns {

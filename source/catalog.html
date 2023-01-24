@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <link rel="preload" href="img/form/form/back-mobile-small@2x.jpg" as="image">
+  <link rel="preload" href="img/form/form/back-mobile-small@1x.jpg" as="image">
+  <link rel="preload" href="img/index/ornament.svg" as="image">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon-svg-32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
@@ -63,7 +66,7 @@
 
       <section class="photos-header">
         <h2 class="photos-header__logo">Фото и видео</h2>
-        <p class="photos-header__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <p class="photos-header__text">Не можете решиться на путешествие из-за курса?<span class="tablet"></span> Фотографии помогут вам забыть о политике и экономике.</p>
       </section>
 
       <section class="photos">
@@ -78,7 +81,7 @@
 
                 <source media="(min-width: 1200px)" srcset="img/catalog/retinized/desktop/photo-1-desktop@1x.jpg 1x, img/catalog/retinized/desktop/photo-1-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/retinized/tablet/photo-1-tablet@1x.jpg 1x, img/catalog/retinized/tablet/photo-1-tablet@2x.jpg 2x">
-                <img class="photo-card__first" src="img/catalog/retinized/mobile/photo-1-mobile@1x.jpg" srcset="img/catalog/retinized/mobile/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Уходящая в закат дорога">
+                <img class="photo-card__first" src="img/catalog/retinized/mobile/photo-1-mobile@1x.jpg" srcset="img/catalog/retinized/mobile/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Уходящая в закат дорога" loading="lazy">
               </picture>
             </a>
             <div class="photo-card__caption caption">
@@ -106,7 +109,7 @@
 
                 <source media="(min-width: 1200px)" srcset="img/catalog/retinized/desktop/photo-2-desktop@1x.jpg 1x, img/catalog/retinized/desktop/photo-2-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/retinized/tablet/photo-2-tablet@1x.jpg 1x, img/catalog/retinized/tablet/photo-2-tablet@2x.jpg 2x">
-                <img class="photo-card__rest" src="img/catalog/retinized/mobile/photo-2-mobile@1x.jpg" srcset="img/catalog/retinized/mobile/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Необычный кактус">
+                <img class="photo-card__rest" src="img/catalog/retinized/mobile/photo-2-mobile@1x.jpg" srcset="img/catalog/retinized/mobile/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Необычный кактус" loading="lazy">
               </picture>
             </a>
             <div class="photo-card__caption caption">
@@ -134,7 +137,7 @@
 
                 <source media="(min-width: 1200px)" srcset="img/catalog/retinized/desktop/photo-3-desktop@1x.jpg 1x, img/catalog/retinized/desktop/photo-3-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/retinized/tablet/photo-3-tablet@1x.jpg 1x, img/catalog/retinized/tablet/photo-3-tablet@2x.jpg 2x">
-                <img class="photo-card__rest" src="img/catalog/retinized/mobile/photo-3-mobile@1x.jpg" srcset="img/catalog/retinized/mobile/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога, петляющая по лесу">
+                <img class="photo-card__rest" src="img/catalog/retinized/mobile/photo-3-mobile@1x.jpg" srcset="img/catalog/retinized/mobile/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога, петляющая по лесу" loading="lazy">
               </picture>
             </a>
             <div class="photo-card__caption caption">
@@ -162,7 +165,7 @@
 
                 <source media="(min-width: 1200px)" srcset="img/catalog/retinized/desktop/photo-4-desktop@1x.jpg 1x, img/catalog/retinized/desktop/photo-4-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/retinized/tablet/photo-4-tablet@1x.jpg 1x, img/catalog/retinized/tablet/photo-4-tablet@2x.jpg 2x">
-                <img class="photo-card__rest" src="img/catalog/retinized/mobile/photo-4-mobile@1x.jpg" srcset="img/catalog/retinized/mobile/photo-4-mobile@2x.jpg 2x" width="280" height="280"  alt="Вид на красные скалы">
+                <img class="photo-card__rest" src="img/catalog/retinized/mobile/photo-4-mobile@1x.jpg" srcset="img/catalog/retinized/mobile/photo-4-mobile@2x.jpg 2x" width="280" height="280"  alt="Вид на красные скалы" loading="lazy">
               </picture>
             </a>
             <div class="photo-card__caption caption">
@@ -197,7 +200,7 @@
 
             <source media="(min-width: 1200px)" srcset="img/catalog/retinized/desktop/video-desktop@1x.jpg 1x, img/catalog/retinized/desktop/video-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/catalog/retinized/tablet/video-tablet@1x.jpg 1x, img/catalog/retinized/tablet/video-tablet@2x.jpg 2x">
-            <img class="video__thumbnail-fallback" src="img/catalog/retinized/mobile/video-mobile@1x.jpg" srcset="img/catalog/retinized/mobile/video-mobile@2x.jpg 2x" width="280" height="177" alt="Машины, уезжающие за поворот дороги">
+            <img class="video__thumbnail-fallback" src="img/catalog/retinized/mobile/video-mobile@1x.jpg" srcset="img/catalog/retinized/mobile/video-mobile@2x.jpg 2x" width="280" height="177" alt="Видео о Седоне" loading="lazy">
           </picture>
           <svg class="video__play-icon" width="48" height="54">
             <use xlink:href="img/sprite.svg#play-icon"></use>
@@ -207,7 +210,7 @@
     </main>
 
 
-    <footer class="main-footer">
+    <footer class="main-footer  main-footer--width-fix">
       <div class="main-footer__hashtag">
         <p class="main-footer__hashtag-text">#VISITSEDONA</p>
       </div>

@@ -9,6 +9,14 @@
   margin-bottom: 35px;
 }
 
+.intro__header .mobile::after {
+  content: "\A";
+}
+
+.mobile::after {
+  white-space: pre;
+}
+
 .intro__description {
   text-align: center;
   text-transform: uppercase;
@@ -24,8 +32,16 @@
     margin-bottom: 30px;
   }
 
-  .intro__header br {
-    display: none;
+  .intro__header .mobile::after {
+    content: "";
+  }
+
+  .intro__header .tablet::after {
+    content: "\A";
+  }
+
+  .tablet::after {
+    white-space: pre;
   }
 }
 

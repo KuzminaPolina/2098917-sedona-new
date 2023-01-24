@@ -10,14 +10,13 @@
 .video__text {
   padding: 0 20px;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 25px;
 }
 
 .video__text-header {
   .header;
   text-align: center;
-  margin-top: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .video__text-description {
@@ -38,6 +37,11 @@
 }
 
 @media (min-width: @tablet-width) {
+  .video {
+    padding-top: 0;
+    padding-bottom: 43px;
+  }
+
   .video__text-header {
     font-size: 31px;
     margin-bottom: 30px;
@@ -58,5 +62,10 @@
 @media (min-width: @desktop-width) {
   .video__thumbnail-fallback {
     width: 800px;
+  }
+
+  .video {
+    padding-top: 0;
+    padding-bottom: 85px;
   }
 }
