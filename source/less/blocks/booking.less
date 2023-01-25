@@ -83,3 +83,19 @@
   color: #ffffff;
   background-color: #e5e5e5;
 }
+
+.booking__mobile::after {
+  content: "\A";
+  white-space: pre;
+}
+
+@media (min-width: @tablet-width) {
+  .booking__mobile::after {
+    content: "";
+  }
+
+  .booking__tablet::after {
+    content: "\A";
+    white-space: pre;
+  }
+}

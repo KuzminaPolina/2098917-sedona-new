@@ -73,13 +73,11 @@
   margin: 0;
 }
 
-.advantages__numbered-description .mobile::after,
-.advantages__attractions-description .mobile::after,
-.booking__description .mobile::after {
+.advantages__mobile::after {
   content: "\A";
 }
 
-.mobile::after {
+.advantages__mobile::after {
   white-space: pre;
 }
 
@@ -240,20 +238,12 @@
     }
   }
 
-  .advantages__numbered-description .mobile::after,
-  .advantages__attractions-description .mobile::after,
-  .booking__description .mobile::after {
+  .advantages__mobile::after {
     content: "";
   }
 
-  .advantages__numbered-description .tablet::after,
-  .advantages__attractions-description .tablet::after,
-  .booking__description .tablet::after,
-  .advantages__numbered-header .tablet::after {
+  .advantages__tablet::after {
     content: "\A";
-  }
-
-  .tablet::after {
     white-space: pre;
   }
 }
@@ -294,21 +284,12 @@
     }
   }
 
-  .advantages__numbered-description .tablet::after,
-  .advantages__attractions-description .tablet::after,
-  .booking__description .tablet::after,
-  .advantages__numbered-header .tablet::after {
+  .advantages__tablet::after {
     content: "";
   }
 
-  .advantages__numbered-description .desktop::after,
-  .advantages__attractions-description .desktop::after,
-  .booking__description .desktop::after,
-  .advantages__numbered-header .desktop::after {
+  .advantages__desktop::after {
     content: "\A";
-  }
-
-  .desktop::after {
     white-space: pre;
   }
 }
