@@ -56,6 +56,15 @@
   cursor: pointer;
 }
 
+.impressions__control-mark:hover {
+  background-color: #e5e5e5;
+}
+
+.impressions__input:disabled + .impressions__control-mark {
+  background-color: #d5d5d5;
+  cursor: default;
+}
+
 .impressions__input[type="radio"] + .impressions__control-mark {
   border-radius: 50%;
 }
@@ -69,6 +78,10 @@
   background-color: #333333;
   border-radius: 50%;
   content: "";
+}
+
+.impressions__input:disabled + .impressions__control-mark::before {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {

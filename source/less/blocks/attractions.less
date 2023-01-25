@@ -56,6 +56,15 @@
   cursor: pointer;
 }
 
+.attractions__control-mark:hover {
+  background-color: #e5e5e5;
+}
+
+.attractions__input:disabled + .attractions__control-mark {
+  background-color: #d5d5d5;
+  cursor: default;
+}
+
 .attractions__input[type="checkbox"]:checked + .attractions__control-mark::before,
 .attractions__input[type="checkbox"]:checked + .attractions__control-mark::after {
   position: absolute;
@@ -67,6 +76,11 @@
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
   content: "";
+}
+
+.attractions__input:disabled + .attractions__control-mark::before,
+.attractions__input:disabled + .attractions__control-mark::after {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {

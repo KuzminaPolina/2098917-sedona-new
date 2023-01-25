@@ -15,10 +15,19 @@
   background: none;
   border: none;
   cursor: pointer;
+  color: #81b3d2;
 
   &--nojs {
     display: none;
   }
+}
+
+.main-nav__toggle:hover {
+  opacity: 0.6;
+}
+
+.main-nav__toggle:active {
+  opacity: 0.3;
 }
 
 .main-nav__list-wrapper {
@@ -57,6 +66,54 @@
   top: 15px;
   right: 15px;
   cursor: pointer;
+  color: #ffffff;
+}
+
+.main-nav__close:hover {
+  opacity: 0.6;
+}
+
+.main-nav__close:active {
+  opacity: 0.3;
+}
+
+.main-nav__item {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #81b3d2;
+  color: #ffffff;
+  box-shadow: inset 0 1px 0 0 #9ac2db,
+    inset 0 -1px 0 0 #678fa8;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.main-nav__item:hover {
+  background-color: #669ec0;
+  color: #ffffff;
+  box-shadow: inset 0 1px 0 0 #9ac2db,
+    inset 0 -1px 0 0 #678fa8;
+}
+
+.main-nav__link {
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.main-nav__link:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 1px 0 0 #9ac2db,
+    inset 0 -1px 0 0 #678fa8;
 }
 
 .main-nav__list {
@@ -67,31 +124,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #81b3d2;
+}
+
+.main-nav__item:last-child {
   box-shadow: inset 0 -14px 15px -15px #4b4b4b;
-}
-
-.main-nav__item {
-  width: 100%;
-  height: 55px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: inset 0 1px 0 0 #9ac2db,
-    inset 0 -1px 0 0 #678fa8;
-
-  &--hidden {
-    display: none;
-  }
-}
-
-.main-nav__link {
-  height: 55px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: #ffffff;
 }
 
 .main-nav picture {
@@ -149,5 +185,26 @@
     &--current {
       color: #766357;
     }
+  }
+
+  .main-nav__link:hover {
+    color: #81b3d2;
+  }
+
+  .main-nav__link:active {
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: none;
+    opacity: 0.3;
+  }
+
+  .main-nav__item:last-child {
+    box-shadow: none;
+  }
+
+  .main-nav__item:hover {
+    background-color: #ffffff;
+    box-shadow: none;
+    color: #81b3d2;
   }
 }

@@ -2,9 +2,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #ffffff;
+  padding-bottom: 8px;
 }
 
 .map__sedona {
   width: 100%;
   object-fit: cover;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    padding-bottom: 2px;
+  }
 }

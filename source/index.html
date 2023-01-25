@@ -5,6 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="img/index/index-background.jpg" as="image">
+  <link rel="preload" href="img/index/retinized/mobile/back-mobile.jpg@2x.jpg" as="image">
+  <link rel="preload" href="img/index/retinized/mobile/back-mobile.jpg@1x.jpg" as="image">
+  <link rel="preload" href="img/index/ornament.svg" as="image">
+  <link rel="preload" href="img/index/retinized/tablet/back-tablet-desktop@1x.jpg" as="image">
+  <link rel="preload" href="img/index/retinized/tablet/back-tablet-desktop@2x.jpg" as="image">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ptsans.woff" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ptsans-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ptsans-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon-svg-32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
@@ -62,9 +73,8 @@
 
       <section class="intro">
         <h2 class="visually-hidden">Седона прекрасна!</h2>
-        <p class="intro__header">Седона — небольшой городок в Аризоне,
-          <br>заслуживающий большего!</p>
-        <p class="intro__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <p class="intro__header">Седона — небольшой<span class="intro__mobile"></span> городок в Аризоне,<span class="intro__mobile intro__tablet"></span> заслуживающий большего!</p>
+        <p class="intro__description">Рассмотрим 5 причин, по которым<span class="intro__mobile"></span> Седона круче, чем гранд каньон!</p>
       </section>
 
       <ol class="advantages main-grid">
@@ -72,7 +82,7 @@
           <div class="advantages__numbered advantages__numbered--blue advantages__numbered--ornament main-grid__subgrid-one">
             <p class="advantages__numbered-header">Настоящий городок</p>
             <p class="advantages__numbered-number">— №1 —</p>
-            <p class="advantages__numbered-description">Седона не аттракцион для туристов, <br>там течёт своя жизнь</p>
+            <p class="advantages__numbered-description">Седона не аттракцион для<span class="advantages__tablet"></span> туристов,<span class="advantages__mobile advantages__desktop"></span> там течёт своя<span class="tablet"></span> жизнь</p>
           </div>
 
           <div class="advantages__img-wrapper main-grid__subgrid-two">
@@ -91,19 +101,19 @@
             <li class="advantages__attraction">
               <div class="advantages__attraction-text advantages__attraction-text--accomodation">
                 <p class="advantages__attractions-header">Жильё</p>
-                <p class="advantages__attractions-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <p class="advantages__attractions-description">Рекомендуем пожить в<span class="advantages__mobile advantages__tablet"></span> настоящем<span class="advantages__desktop"></span> мотеле, всё<span class="advantages__tablet"></span> как в<span class="advantages__mobile"></span> кино!</p>
               </div>
             </li>
             <li class="advantages__attraction">
               <div class="advantages__attraction-text advantages__attraction-text--food">
                 <p class="advantages__attractions-header">Еда</p>
-                <p class="advantages__attractions-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="advantages__attractions-description">Всегда заказывайте<span class="advantages__tablet"></span> фирменный<span class="advantages__mobile"></span> бургер,<span class="advantages__tablet desktop"></span> вы не разочаруетесь!</p>
               </div>
             </li>
             <li class="advantages__attraction">
               <div class="advantages__attraction-text advantages__attraction-text--souvenirs">
                 <p class="advantages__attractions-header">Сувениры</p>
-                <p class="advantages__attractions-description">Не только китайского, но и местного производства!</p>
+                <p class="advantages__attractions-description">Не только китайского,<span class="advantages__tablet advantages__desktop"></span> но и<span class="advantages__mobile"></span> местного<span class="advantages__tablet"></span> производства!</p>
               </div>
             </li>
           </ul>
@@ -111,9 +121,9 @@
 
         <li class="advantages__item main-grid__two main-grid__two-subgrid advantages__item--mobile">
           <div class="advantages__numbered advantages__numbered--blue main-grid__two-subgrid-one">
-            <p class="advantages__numbered-header">Там есть мост дьявола</p>
+            <p class="advantages__numbered-header">Там есть<span class="tablet desktop"></span> мост дьявола</p>
             <p class="advantages__numbered-number">— №2 —</p>
-            <p class="advantages__numbered-description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <p class="advantages__numbered-description">Да, по нему можно<span class="advantages__tablet"></span> пройти!<span class="advantages__desktop"></span> Если вы<span class="advantages__mobile advantages__tablet"></span> осмелитесь, конечно</p>
           </div>
           <div class="advantages__img-wrapper main-grid__two-subgrid-two">
             <picture>
@@ -130,25 +140,25 @@
 
         <li class="advantages__item main-grid__three">
           <div class="advantages__numbered advantages__numbered--gray">
-            <p class="advantages__numbered-header">Небольшая площадь</p>
+            <p class="advantages__numbered-header">Небольшая<span class="advantages__tablet advantages__desktop"></span> площадь</p>
             <p class="advantages__numbered-number">— №3 —</p>
-            <p class="advantages__numbered-description">Все интересные места находятся очень близко</p>
+            <p class="advantages__numbered-description">Все интересные места<span class="advantages__tablet"></span> находятся<span class="advantages__mobile"></span> очень<span class="advantages__desktop"></span> близко</p>
           </div>
         </li>
 
         <li class="advantages__item main-grid__four">
           <div class="advantages__numbered advantages__numbered--gray">
-            <p class="advantages__numbered-header">Красивая дорога</p>
+            <p class="advantages__numbered-header">Красивая<span class="advantages__tablet advantages__desktop"></span> дорога</p>
             <p class="advantages__numbered-number">— №4 —</p>
-            <p class="advantages__numbered-description">Ехать в Седону из Лас-Вегаса совсем <br>не скучно!</p>
+            <p class="advantages__numbered-description">Ехать в Седону из Лас-<span class="advantages__tablet"></span>Вегаса<span class="advantages__mobile"></span> совсем<span class="advantages__tablet advantages__desktop"></span> не скучно!</p>
           </div>
         </li>
 
         <li class="advantages__item main-grid__five">
           <div class="advantages__numbered advantages__numbered--gray">
-            <p class="advantages__numbered-header">Мало туристов</p>
+            <p class="advantages__numbered-header">Мало<span class="advantages__tablet advantages__desktop"></span> туристов</p>
             <p class="advantages__numbered-number">— №5 —</p>
-            <p class="advantages__numbered-description">Большинство едет в Гранд Каньон и толпится там</p>
+            <p class="advantages__numbered-description">Большинство едет в Гранд<span class="advantages__tablet"></span> Каньон<span class="advantages__mobile"></span> и<span class="advantages__desktop"></span> толпится там</p>
           </div>
         </li>
       </ol>
@@ -156,7 +166,7 @@
       <section class="booking">
         <h2 class="visually-hidden">Бронирование</h2>
         <p class="booking__header">Заинтересовались?</p>
-        <p class="booking__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="booking__description">Укажите предполагаемые даты<span class="booking__mobile"></span> поездки,<span class="booking__tablet booking__desktop"></span> и мы покажем вам лучшие<span class="booking__mobile"></span> предложения гостиниц в Седоне</p>
         <a class="booking__link booking__link--wide" href="#">Найти гостиницу</a>
       </section>
 

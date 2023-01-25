@@ -73,6 +73,11 @@
   margin: 0;
 }
 
+.advantages__mobile::after {
+  content: "\A";
+  white-space: pre;
+}
+
 .advantages__img-wrapper {
   margin: 0;
   padding: 0;
@@ -203,7 +208,7 @@
     justify-content: center;
     align-content: center;
     box-sizing: border-box;
-    padding: 55px 35px 25px;
+    padding: 55px 35px 45px;
     flex-grow: 1;
     margin-bottom: 0;
     max-width: 400px;
@@ -228,6 +233,15 @@
     &--souvenirs {
       background: url("../img/index/gift.svg") center top 0/66px 75px no-repeat;
     }
+  }
+
+  .advantages__mobile::after {
+    content: "";
+  }
+
+  .advantages__tablet::after {
+    content: "\A";
+    white-space: pre;
   }
 }
 
@@ -265,5 +279,14 @@
     &--souvenirs {
       background: url("../img/index/gift.svg") center top 10px/75px 75px no-repeat;
     }
+  }
+
+  .advantages__tablet::after {
+    content: "";
+  }
+
+  .advantages__desktop::after {
+    content: "\A";
+    white-space: pre;
   }
 }

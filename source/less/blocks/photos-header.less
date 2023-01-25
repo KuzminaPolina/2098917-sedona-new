@@ -1,7 +1,7 @@
 .photos-header {
   background-color: #ffffff;
   margin: 0;
-  padding: 20px 18px;
+  padding: 15px 18px 22px;
   border-bottom: solid 1px #f2f2f2;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
   .header;
   text-align: center;
   margin-top: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .photos-header__text {
@@ -23,15 +23,28 @@
 
 @media (min-width: @tablet-width) {
   .photos-header {
-    padding: 65px 155px;
+    padding: 45px 65px 68px;
+    border: none;
   }
 
   .photos-header__logo {
     font-size: 31px;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
   }
 
   .photos-header__text {
     width: 450px;
+  }
+
+  .photos-header__tablet::after {
+    content: "\A";
+    white-space: pre;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos-header {
+    padding-top: 77px;
+    padding-bottom: 78px;
   }
 }
