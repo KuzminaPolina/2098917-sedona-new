@@ -181,6 +181,7 @@
 
   .main-nav__link {
     color: #000000;
+    padding: 0 10px;
 
     &--current {
       color: #766357;
@@ -196,6 +197,11 @@
     color: #000000;
     box-shadow: none;
     opacity: 0.3;
+  }
+
+  .main-nav__link:focus-visible {
+    outline: solid 4px #e5e5e5;
+    outline-offset: -4px;
   }
 
   .main-nav__item:last-child {

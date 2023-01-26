@@ -6,12 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <link rel="preload" href="css/style.min.css" as="style">
-  <link rel="preload" href="img/index/index-background.jpg" as="image">
   <link rel="preload" href="img/index/retinized/mobile/back-mobile.jpg@2x.jpg" as="image">
-  <link rel="preload" href="img/index/retinized/mobile/back-mobile.jpg@1x.jpg" as="image">
+  <link rel="preload" href="img/index/retinized/mobile/back-mobile.jpg.jpg" as="image">
   <link rel="preload" href="img/index/ornament.svg" as="image">
   <link rel="preload" href="img/index/retinized/tablet/back-tablet-desktop@1x.jpg" as="image">
-  <link rel="preload" href="img/index/retinized/tablet/back-tablet-desktop@2x.jpg" as="image">
+  <link rel="preload" href="img/index/retinized/tablet/back-tablet-desktop.jpg@2x.jpg" as="image">
   <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/ptsans.woff" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/ptsans-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -40,25 +39,25 @@
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--current">Главная</a>
+              <a class="main-nav__link main-nav__link--current" aria-label="Главная страница">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+              <a class="main-nav__link" href="catalog.html" aria-label="Перейти на страницу с фото">Фото и видео</a>
             </li>
-            <li class="main-nav__item main-nav__item--hidden">
-              <a class="main-nav__link" href="#"></a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            <li class="main-nav__item main-nav__item--hidden" aria-hidden="true" focusable="false" tabindex="-1">
+              <a class="main-nav__link" href="#" aria-hidden="true" focusable="false" tabindex="-1"></a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              <a class="main-nav__link" href="form.html" aria-label="Перейти на страницу с анкетой">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на сайт HTML Academy">HTML Academy</a>
             </li>
           </ul>
         </div>
       </nav>
-      <svg class="main-header__logo-image" width="185" height="96">
-        <use xlink:href="img/sprite.svg#logo"></use>
+      <svg class="main-header__logo-image" width="185" height="96" aria-hidden="true" focusable="false">
+        <use xlink:href="img/sprite.svg#logo" aria-hidden="true" focusable="false"></use>
       </svg>
       <div class="hero">
         <svg class="hero__img" width="282" height="214" viewBox="0 0 461 350">
@@ -91,7 +90,7 @@
               <source type="image/webp" media="(min-width: 768px)" srcset="img/index/retinized/tablet/photo-city-tablet@1x.webp 1x, img/index/retinized/tablet/photo-city-tablet@2x.webp 2x">
               <source type="image/webp" media="(min-width: 320px)" srcset="img/index/retinized/mobile/photo-city-mobile@1x.webp 1x, img/index/retinized/mobile/photo-city-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1200px)" srcset="img/index/retinized/photo-city-desktop@1x.jpg 1x, img/index/retinized/photo-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 1200px)" srcset="img/index/retinized/desktop/photo-city-desktop@1x.jpg 1x, img/index/retinized/desktop/photo-city-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/index/retinized/tablet/photo-city-tablet@1x.jpg 1x, img/index/retinized/tablet/photo-city-tablet@2x.jpg 2x">
               <img class="advantages__img" src="img/index/retinized/mobile/photo-city-mobile@1x.jpg" srcset="img/index/retinized/mobile/photo-city-mobile@2x.jpg 2x" height="260" width="520" alt="Picturesque townscape" loading="lazy">
             </picture>
@@ -131,7 +130,7 @@
               <source type="image/webp" media="(min-width: 768px)" srcset="img/index/retinized/tablet/photo-bridge-tablet@1x.webp 1x, img/index/retinized/tablet/photo-bridge-tablet@2x.webp 2x">
               <source type="image/webp" media="(min-width: 320px)" srcset="img/index/retinized/mobile/photo-bridge-mobile@1x.webp 1x, img/index/retinized/mobile/photo-bridge-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1200px)" srcset="img/index/retinized/photo-bridge-desktop@1x.jpg 1x, img/index/retinized/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 1200px)" srcset="img/index/retinized/desktop/photo-bridge-desktop@1x.jpg 1x, img/index/retinized/desktop/yphoto-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/index/retinized/tablet/photo-bridge-tablet@1x.jpg 1x, img/index/retinized/tablet/photo-bridge-tablet@2x.jpg 2x">
               <img class="advantages__img" src="img/index/retinized/mobile/photo-bridge-mobile@1x.jpg" srcset="img/index/retinized/mobile/photo-bridge-mobile@2x.jpg 2x" height="260" width="520" alt="Canyon landscape" loading="lazy">
             </picture>
@@ -167,7 +166,7 @@
         <h2 class="visually-hidden">Бронирование</h2>
         <p class="booking__header">Заинтересовались?</p>
         <p class="booking__description">Укажите предполагаемые даты<span class="booking__mobile"></span> поездки,<span class="booking__tablet booking__desktop"></span> и мы покажем вам лучшие<span class="booking__mobile"></span> предложения гостиниц в Седоне</p>
-        <a class="booking__link booking__link--wide" href="#">Найти гостиницу</a>
+        <a class="booking__link booking__link--wide" href="#" aria-label="Начать поиск гостиницы">Найти гостиницу</a>
       </section>
 
       <section class="map">
@@ -184,7 +183,7 @@
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link" href="#">
+            <a class="social__link" href="#" aria-label="Ссылка на аккаунт Вконтакте">
               <span class="visually-hidden">Мы Вконтакте</span>
               <svg class="social__icon" width="24" height="14">
                 <use xlink:href="img/sprite.svg#vkontakte"></use>
@@ -192,7 +191,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">
+            <a class="social__link" href="#" aria-label="Ссылка на Телеграм">
               <span class="visually-hidden">Мы в Телеграме</span>
               <svg class="social__icon" width="22" height="18">
                 <use xlink:href="img/sprite.svg#telegram"></use>
@@ -200,7 +199,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">
+            <a class="social__link" href="#" aria-label="Ссылка на Ютуб-канал">
               <span class="visually-hidden">Мы в Ютубе</span>
               <svg class="social__icon" width="20" height="14">
                 <use xlink:href="img/sprite.svg#youtube"></use>
