@@ -17,7 +17,7 @@ import browser from 'browser-sync';
 // Styles
 
 export const styles = () => {
-  return gulp.src('source/less/style.less', { sourcemaps: true })
+  return gulp.src('docs/less/style.less', { sourcemaps: true })
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
@@ -32,7 +32,7 @@ export const styles = () => {
 // HTML
 
 export const html = () => {
-  return gulp.src('source/*.html')
+  return gulp.src('docs/*.html')
   .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest('build'))
 }
@@ -40,7 +40,7 @@ export const html = () => {
 // Scripts
 
 export const scripts = () => {
-  return gulp.src('source/js/*.js')
+  return gulp.src('docs/js/*.js')
   .pipe(terser())
   .pipe(gulp.dest('build/js'))
 }
@@ -48,20 +48,20 @@ export const scripts = () => {
 // Images
 
 export const optimizeImages = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
+  return gulp.src('docs/img/**/*.{jpg,png}')
   .pipe(squoosh())
   .pipe(gulp.dest('build/img'))
 }
 
 export const copyImages = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
+  return gulp.src('docs/img/**/*.{jpg,png}')
   .pipe(gulp.dest('build/img'))
 }
 
 // WebP
 
 export const turnToWebp = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
+  return gulp.src('docs/img/**/*.{jpg,png}')
   .pipe(squoosh(
     {webp: {}}
   ))
@@ -71,12 +71,12 @@ export const turnToWebp = () => {
 // SVG
 
 export const svg = () =>
-gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
+gulp.src(['docs/img/**/*.svg', '!docs/img/icons/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
 
 export const sprite = () => {
-  return gulp.src('source/img/icons/*.svg')
+  return gulp.src('docs/img/icons/*.svg')
   .pipe(svgo())
   .pipe(svgstore())
   .pipe(rename('sprite.svg'))
@@ -87,12 +87,12 @@ export const sprite = () => {
 
 export const fonts = (done) => {
   gulp.src([
-    'source/fonts/*.{woff2,woff}',
-    'source/*.ico',
-    'source/img/favicons/*.json',
-    'source/*.webmanifest',
+    'docs/fonts/*.{woff2,woff}',
+    'docs/*.ico',
+    'docs/img/favicons/*.json',
+    'docs/*.webmanifest',
   ], {
-    base: 'source'
+    base: 'docs'
   })
   .pipe(gulp.dest('build'))
   done();
