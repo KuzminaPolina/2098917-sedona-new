@@ -24,7 +24,7 @@
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "stylelint": "stylelint \"docs/less/**/*.less\" --syntax less",
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "npx gulp"
@@ -39,10 +39,10 @@
   "editorconfig-cli": [
     "*.json",
     "*.js",
-    "source/*.html",
-    "source/js/**/*.js",
-    "source/img/**/*.svg",
-    "source/less/**/*.less"
+    "docs/*.html",
+    "docs/js/**/*.js",
+    "docs/img/**/*.svg",
+    "docs/less/**/*.less"
   ],
   "engines": {
     "node": "^16"

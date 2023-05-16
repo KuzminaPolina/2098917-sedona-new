@@ -128,8 +128,8 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/less/**/*.less', gulp.series(styles));
-  gulp.watch('source/*.html', gulp.series(html, reload));
+  gulp.watch('docs/less/**/*.less', gulp.series(styles));
+  gulp.watch('docs/*.html', gulp.series(html, reload));
 }
 
 // Build
