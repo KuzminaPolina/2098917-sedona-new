@@ -7,6 +7,7 @@
     "autoprefixer": "10.4.0",
     "browser-sync": "2.27.7",
     "del": "^7.0.0",
+    "gh-pages": "^5.0.0",
     "gulp": "4.0.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-less": "5.0.0",
@@ -27,7 +28,8 @@
     "stylelint": "stylelint \"docs/less/**/*.less\" --syntax less",
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "npx gulp"
+    "start": "npx gulp",
+    "deploy": "gulp build && gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
